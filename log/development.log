@@ -2606,3 +2606,301 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 2952)
 
 
+Started GET "/admins/sign_in" for 172.17.0.1 at 2024-02-13 04:10:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/admins/sign_in"):
+  
+Started GET "/" for 172.17.0.1 at 2024-02-13 04:10:36 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 351)
+  Rendered layout layouts/application.html.erb (Duration: 80.3ms | Allocations: 23234)
+Completed 200 OK in 99ms (Views: 85.7ms | ActiveRecord: 0.0ms | Allocations: 26042)
+
+
+Started GET "/login" for 172.17.0.1 at 2024-02-13 04:10:44 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2152)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 4794)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 5592)
+
+
+Started POST "/login" for 172.17.0.1 at 2024-02-13 04:10:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"fqef", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 616)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3163)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3877)
+
+
+Started POST "/login" for 172.17.0.1 at 2024-02-13 04:10:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 479)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-13 04:10:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2794)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3059)
+
+
+Started GET "/logout" for 172.17.0.1 at 2024-02-13 04:11:03 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 172.17.0.1 at 2024-02-13 04:19:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 297)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 5428)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 6340)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `links_path' for #<ActionView::Base:0x0000000000c6e8>
+
+    <li>'.freeze;@output_buffer.append=( link_to 'Links', links_path );@output_buffer.safe_append='</li>
+                                                          ^^^^^^^^^^
+Did you mean?  link_to):
+    2: <html>
+    3: <ul>
+    4:     <li><%= link_to 'Home', root_path %></li>
+    5:     <li><%= link_to 'Links', links_path %></li>
+    6: </ul>
+    7: <head>
+    8:   <title>Login</title>
+  
+app/views/layouts/application.html.erb:5
+Started GET "/" for 172.17.0.1 at 2024-02-13 04:19:59 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4769)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 5025)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `links_path' for #<ActionView::Base:0x0000000000c850>
+
+    <li>'.freeze;@output_buffer.append=( link_to 'Links', links_path );@output_buffer.safe_append='</li>
+                                                          ^^^^^^^^^^
+Did you mean?  link_to):
+    2: <html>
+    3: <ul>
+    4:     <li><%= link_to 'Home', root_path %></li>
+    5:     <li><%= link_to 'Links', links_path %></li>
+    6: </ul>
+    7: <head>
+    8:   <title>Login</title>
+  
+app/views/layouts/application.html.erb:5
+Started GET "/" for 172.17.0.1 at 2024-02-13 04:29:44 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 600)
+  Rendered layout layouts/application.html.erb (Duration: 90.9ms | Allocations: 24176)
+Completed 200 OK in 104ms (Views: 94.4ms | ActiveRecord: 0.0ms | Allocations: 28617)
+
+
+Started GET "/links" for 172.17.0.1 at 2024-02-13 04:29:45 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ArgumentError (Before process_action callback :authenticate_admin! has not been defined):
+  
+app/controllers/links_controller.rb:2:in `<class:LinksController>'
+app/controllers/links_controller.rb:1:in `<main>'
+Started GET "/links" for 172.17.0.1 at 2024-02-13 04:30:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 3256)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms | Allocations: 4058)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-13 04:30:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3135)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 3770)
+
+
+Started GET "/links" for 172.17.0.1 at 2024-02-13 04:30:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2752)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3032)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-13 04:30:25 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2777)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 3039)
+
+
+Started GET "/links" for 172.17.0.1 at 2024-02-13 04:30:26 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2729)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2994)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-13 04:30:26 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2789)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 3051)
+
+
+Started GET "/links" for 172.17.0.1 at 2024-02-13 04:30:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2752)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 3014)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-13 05:16:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 300)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3556)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 4520)
+
+
+Started GET "/links" for 172.17.0.1 at 2024-02-13 05:16:15 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 318)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3294)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 3968)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-13 05:16:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 91)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2802)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3083)
+
+
+Started GET "/login" for 172.17.0.1 at 2024-02-13 05:16:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2034)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 4745)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 5540)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-13 05:16:29 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 91)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2807)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3108)
+
+
+Started GET "/links" for 172.17.0.1 at 2024-02-13 05:16:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2827)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3091)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-13 05:16:34 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2801)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3063)
+
+
+Started GET "/login" for 172.17.0.1 at 2024-02-13 05:16:35 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3266)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 3528)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-13 05:16:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2828)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3103)
+
+
+Started GET "/links" for 172.17.0.1 at 2024-02-13 05:16:54 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2818)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3080)
+
+
