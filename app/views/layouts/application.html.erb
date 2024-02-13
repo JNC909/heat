@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>GoogleOauthDevise</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <style>
-        .flash__alert   { color: red; }
-        .flash__notice  { color: blue; }
-        .flash__success { color: green; }
-    </style>
-  </head>
+<ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'Links', links_path %></li>
+</ul>
+<head>
+  <title>Login</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <!-- Styles for flash messages -->
+  <style>
+    .flash {
+      padding: 10px;
+      border: 1px solid;
+      margin-bottom: 20px;
+    }
+    .flash.alert {
+      background-color: #f2dede;
+      border-color: #ebccd1;
+      color: #a94442;
+    }
+    .flash.notice {
+      background-color: #dff0d8;
+      border-color: #d6e9c6;
+      color: #3c763d;
+    }
+    /* Your additional styles here */
+  </style>
+</head>
+<body>
 
-  <body>
-    <% if flash.any? %>
-      <% flash.each do |key, value| -%>
-        <section class="flash flash__<%= key %>"><%= value.html_safe %></section>
-      <% end -%>
-    <% end %>
-    <%= yield %>
-  </body>
+  <% flash.each do |type, message| %>
+    <%= content_tag(:div, message, class: "flash #{type}") %>
+  <% end %>
+
+  <%= yield %>
+
+</body>
 </html>
