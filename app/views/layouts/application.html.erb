@@ -1,42 +1,29 @@
 <!DOCTYPE html>
 <html>
-<ul>
-    <li><%= link_to 'Home', root_path %></li>
-    <li><%= link_to 'Links', links_path %></li>
-</ul>
-<head>
-  <title>Login</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <!-- Styles for flash messages -->
-  <style>
-    .flash {
-      padding: 10px;
-      border: 1px solid;
-      margin-bottom: 20px;
-    }
-    .flash.alert {
-      background-color: #f2dede;
-      border-color: #ebccd1;
-      color: #a94442;
-    }
-    .flash.notice {
-      background-color: #dff0d8;
-      border-color: #d6e9c6;
-      color: #3c763d;
-    }
-    /* Your additional styles here */
-  </style>
-</head>
-<body>
+  <head>
+  <center>
+    <title>OmniAuthGoogle</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <body style="background-color:#C0C0C0;">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
 
-  <% flash.each do |type, message| %>
-    <%= content_tag(:div, message, class: "flash #{type}") %>
-  <% end %>
+        <style>
+        .flash__alert   { color: red; }
+        .flash__notice  { color: blue; }
+        .flash__success { color: green; }
+    </style>
+  </head>
 
-  <%= yield %>
-
-</body>
+  <body>
+    <% if flash.any? %>
+      <% flash.each do |key, value| -%>
+        <section class="flash flash__<%= key %>"><%= value.html_safe %></section>
+      <% end -%>
+    <% end %>
+    <%= yield %>
+     </center>
+  </body>
 </html>
