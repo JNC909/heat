@@ -2,7 +2,10 @@ require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  # Dig for credentials
+  ENV['GOOGLE_OAUTH_CLIENT_ID'] = Rails.application.credentials.dig(:google_oauth_client_id)
 
+  ENV['GOOGLE_OAUTH_CLIENT_SECRET'] = Rails.application.credentials.dig(:google_oauth_client_secret)
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
@@ -66,8 +69,8 @@ Rails.application.configure do
   # config.action_view.annotate_rendered_view_with_filenames = true
 
   # Uncomment if you wish to allow Action Cable access from any origin.
-  # config.action_cable.disable_request_forgery_protection = true
+  config.action_cable.disable_request_forgery_protection = true
 
-  ENV['GOOGLE_OAUTH_CLIENT_ID'] = '45595418972-qalj6a96cpa47la2lv6u2ido4t4biugs.apps.googleusercontent.com'
-  ENV['GOOGLE_OAUTH_CLIENT_SECRET'] = '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'
+  ENV['GOOGLE_OAUTH_CLIENT_ID'] = '343020410075-u09vt2cq1vbv8iq28qrk2s5g72i5ftdv.apps.googleusercontent.com'
+  ENV['GOOGLE_OAUTH_CLIENT_SECRET'] = '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'
 end

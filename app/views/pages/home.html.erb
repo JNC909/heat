@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Rails App</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <!-- Include Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background-color: #fff; /* White background */
+      color: #800000; /* Maroon text color */
+    }
+
+    .navbar {
+      background-color: #800000 !important; /* Maroon navbar background */
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fff !important; /* White text color for navbar links */
+    }
+
+    .btn-primary {
+      background-color: #800000 !important; /* Maroon button background */
+      border-color: #800000 !important; /* Maroon border color */
+    }
+
+    .btn-primary:hover {
+      background-color: #8B0000 !important; /* Darker maroon on hover */
+      border-color: #8B0000 !important;
+    }
+
+    .btn-success {
+      background-color: #fff !important; /* White button background */
+      border-color: #800000 !important; /* Maroon border color */
+      color: #800000 !important; /* Maroon text color */
+    }
+
+    .btn-success:hover {
+      background-color: #f8f9fa !important; /* Lighter white on hover */
+      color: #800000 !important;
+    }
+
+    h1, h2 {
+      color: #800000; /* Maroon headings */
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <%= link_to "Home page", root_path, class: "navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to "Links", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Events", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Members", "#", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Meetings", "#", class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+    <div class="ml-auto">
+      <% if current_user %>
+        <%= link_to "Edit Account", "#", class: "btn btn-primary mr-2" %>
+      <% else %>
+        <%= link_to "Login", new_user_session_path, class: "btn btn-primary mr-2" %>
+        <%= link_to "Create Account", new_user_registration_path, class: "btn btn-success" %>
+      <% end %>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <center>
+<% if current_user %>
+<p>Current user logged in:</p>
+<%= current_user.email %>
+<%= image_tag(current_user.avatar_url) %> <br>
+<%= link_to "Edit Account", edit_user_registration_path %>
+<%= button_to "Logout", destroy_user_session_path, data: {turbo: "false"}, method: :delete %>
+<% end %>
+
+</center>
+</div>
+
+</body>
+</html>
