@@ -1,10 +1,8 @@
 class SessionsController < ApplicationController
-  def new
-    
-  end
+  def new; end
 
   def create
-    if params[:session][:username] == "admin" && params[:session][:password] == "password"
+    if params[:session][:username] == 'admin' && params[:session][:password] == 'password'
       session[:user_id] = 1
       redirect_to root_path, notice: 'Login successful!'
     else
