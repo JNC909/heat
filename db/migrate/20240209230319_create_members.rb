@@ -4,10 +4,9 @@ class CreateMembers < ActiveRecord::Migration[6.1]
       t.string :member_name
       t.integer :member_points
       t.boolean :exec_status
-      #t.belongs_to :event, foreign_key: true
+      # t.belongs_to :event, foreign_key: true
 
       t.timestamps
     end
   end
 end
-

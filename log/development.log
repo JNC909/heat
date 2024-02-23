@@ -2904,3 +2904,243 @@ Processing by LinksController#index as HTML
 Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3080)
 
 
+Started GET "/" for 127.0.0.1 at 2024-02-13 09:33:24 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 707)
+  Rendered layout layouts/application.html.erb (Duration: 150.2ms | Allocations: 73652)
+Completed 200 OK in 166ms (Views: 153.3ms | ActiveRecord: 0.0ms | Allocations: 81411)
+
+
+Started GET "/links" for 127.0.0.1 at 2024-02-13 09:33:27 -0600
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 325)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3297)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 4105)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-13 09:33:29 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2747)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3037)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-02-13 09:33:30 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2368)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 5073)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 5883)
+
+
+Started GET "/links" for 127.0.0.1 at 2024-02-13 09:33:33 -0600
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2769)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3077)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-02-13 09:33:46 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"user", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 616)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3219)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3904)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-13 09:33:48 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 91)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2746)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 3014)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-02-13 09:33:50 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/links" for 127.0.0.1 at 2024-02-13 09:34:01 -0600
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2943)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3248)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-13 09:34:12 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 91)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2746)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3013)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-02-13 09:34:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2024-02-15 10:30:04 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 599)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 21078)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 25535)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-02-15 10:30:06 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2043)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4748)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 5560)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-15 10:38:33 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 599)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 21283)
+Completed 200 OK in 24ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 25740)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-02-15 10:38:35 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2000)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4705)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 5517)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-02-15 10:38:46 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 605)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-15 10:38:46 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2926)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3242)
+
+
+Started GET "/links" for 127.0.0.1 at 2024-02-15 10:38:52 -0600
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 322)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3299)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4103)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-15 10:38:54 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2756)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3047)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-02-15 10:38:59 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/login" for 127.0.0.1 at 2024-02-15 10:39:05 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 848)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3450)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 3757)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-16 09:01:12 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 599)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 21124)
+Completed 200 OK in 28ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 25581)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-16 09:06:26 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 599)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 21473)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 25930)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-02-16 09:06:33 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2024)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4729)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 5541)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-02-16 09:06:44 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"Admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 616)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3219)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 3941)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-02-16 09:06:55 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+Started GET "/" for 127.0.0.1 at 2024-02-16 09:06:55 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 91)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2824)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 3096)
+
+
+Started GET "/links" for 127.0.0.1 at 2024-02-16 09:07:02 -0600
+Processing by LinksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering links/index.html.erb within layouts/application
+  Rendered links/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 322)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3315)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4123)
+
+

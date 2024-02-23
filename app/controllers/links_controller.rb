@@ -1,5 +1,3 @@
 class LinksController < ApplicationController
-  
-  def index
-  end
+  def index; end
 end
