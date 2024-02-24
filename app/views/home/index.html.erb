@@ -1,7 +1,130 @@
-<h1>Welcome to the Dashboard</h1>
-<p>
-  This is the main page of the application that users see after they log in.
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Modal in Navbar</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-<%= link_to 'Login', login_path %>
-<%= link_to 'Logout', logout_path, method: :delete %>
+  <!-- Add Bootstrap for styling and modal functionality -->
+  <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' %>
+  <%= javascript_include_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js' %>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">HEAT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <!-- Other navbar items -->
+        <!-- ... -->
+        <!-- Login modal trigger -->
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <%= form_with(scope: :session, url: login_path, local: true) do |form| %>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Login form fields -->
+            <div class="form-group">
+              <%= form.label :username %>
+              <%= form.text_field :username, required: true, class: 'form-control' %>
+            </div>
+            <div class="form-group">
+              <%= form.label :password %>
+              <%= form.password_field :password, required: true, class: 'form-control' %>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <%= form.submit "Login", class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <!-- Flash Messages -->
+  <% flash.each do |key, message| %>
+    <div class="alert alert-<%= key %>"><%= message %></div>
+  <% end %>
+
+  <!-- About Section-->
+  <section id="about-organization" style="background-color: #f7f7f7; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); max-width: 800px; margin: 20px auto;">
+  <h2 style="text-align: center; color: #333;">About This Organization</h2>
+  <div style="background-color: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+    <p><strong>Abbreviation(s):</strong> H.E.A.T.</p>
+    <p><strong>Purpose:</strong> H.E.A.T. is a student service organization dedicated to improving humanitarian, environmental, and animal welfare issues through positive activism. The Human Environmental Animal Team is committed to making a difference in all areas of service.</p>
+    
+    <p>Texas A&M H.E.A.T. chapter was founded in the spring of 2013 by Jacob Alpuerto. Since then, our chapter has grown to include a variety of students, each with a very unique background and a passion for making the world better.</p>
+    
+    <p>Even as our chapter continues to grow, there remains a place for everyone in H.E.A.T. At Texas A&M University, H.E.A.T. is a hardworking group that wants to better the world and affect positive change through volunteering and educating our peers. This organization allows us to take part in projects we care about, meet new people, and to be a part of something important. As a member of H.E.A.T., you get to make friendships that grow to feel like family, connections throughout the Aggie community, and change in the lives of those that we work with and for. It's not only rewarding but really fun!</p>
+    
+    <p>Some of our favorite projects include building ramps for people in need, working at food banks, cleaning up litter both locally and on beaches, and volunteering with a variety of animal rescues and sanctuaries that work with wolfdogs, tigers, reptiles and amphibians, and companion animals.</p>
+    
+    <p>Our goals for the upcoming year include increasing membership numbers and participation, improving our relationships with each other through more socials, and expanding our outreach to establish new projects with new organizations. If you would like us to help you with a project near the Bryan/College Station area, please reach out to one of our executives or contact us at <a href="mailto:heattamu@gmail.com">heattamu@gmail.com</a>.</p>
+    
+    <p><strong>Year Founded:</strong> 2013</p>
+    <p><strong>Membership Dues:</strong> $20/semester for new members; $15/semester for returning members</p>
+    <p><strong>Admits Members:</strong> First Quarter of Each Semester</p>
+    <p><strong>Meeting Locations:</strong> TBA</p>
+    
+    <h3>Public Contact Information</h3>
+    <p><strong>Name:</strong> Abigail Jensen</p>
+    <p><strong>Email:</strong> <a href="mailto:ajensen2020@tamu.edu">ajensen2020@tamu.edu</a></p>
+    <p><strong>Phone:</strong> 8329044371</p>
+    
+    <h3>Group Contact Information</h3>
+    <p><strong>Website:</strong> <a href="http://heatestablishment.tamu.edu">heatestablishment.tamu.edu</a>, <a href="https://www.instagram.com/heattamu/?hl=en">Instagram</a></p>
+    <p><strong>Email:</strong> <a href="mailto:heattamu@gmail.com">heattamu@gmail.com</a></p>
+    
+    <h3>Organization Associations</h3>
+    <p><strong>Academic Department:</strong> General (No College)</p>
+    <p><strong>Non-Academic Department:</strong> Other</p>
+    
+    <h3>Membership</h3>
+    <p><strong>Approximate membership:</strong> 31-50</p>
+    <p><strong>Policies:</strong> Our organization accepts undergraduate students, graduate students, and faculty/staff as members.</p>
+    <p><strong>Weekly Time Commitment:</strong> 0-3 Hours</p>
+    <p><strong>Intake Process:</strong> Open</p>
+    
+    <!-- ...previous content... -->
+
+    <h3>Events</h3>
+    <p><strong>Community Service Projects:</strong> Three or more times per semester</p>
+    <p><strong>Fundraising Events:</strong> Once per semester</p>
+    <p><strong>Speakers/Lectures:</strong> Twice per semester</p>
+    <p><strong>On-Campus Social Events:</strong> Three or more times per semester</p>
+    <p><strong>Off-Campus Social Events:</strong> Three or more times per semester</p>
+    <p><strong>Hosting Conferences:</strong> Never</p>
+    <p><strong>Sponsoring Special Events (Concerts, one-time events, etc.):</strong> Never</p>
+    <p><strong>New Member Orientation/Training:</strong> Never</p>
+    <p><strong>Events with Alcohol:</strong> Once per year</p>
+    <p><strong>In-State Travel:</strong> Three or more times per semester</p>
+    <p><strong>Domestic US Travel:</strong> Never</p>
+    <p><strong>International Travel:</strong> Never</p>
+  </div>
+</section>
+
+<!-- Include Bootstrap JS and jQuery for modal functionality -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
