@@ -51,7 +51,7 @@
     #about-organization {
     color: black;
   }
-  
+
   </style>
 </head>
 <body>
@@ -80,29 +80,18 @@
     </div>
     <div class="ml-auto">
       <% if current_user %>
-  <%= link_to "Edit Account", "#", class: "btn btn-primary mr-2" %>
+<div style="width: 75px; height: 75px; border-radius: 50%; overflow: hidden;">
+  <%= image_tag(current_user.avatar_url, style: "width: 100%; height: auto; border-radius: 50%; margin-bottom: 5px;") %>
+</div>
+<%= button_to "Logout", destroy_user_session_path(redirect_to: root_path), data: { turbo: "false" }, method: :delete, class: "btn btn-success" %>
 <% else %>
-  <%= link_to "Login", "#", class: "btn btn-primary mr-2", data: { toggle: "modal", target: "#loginModal" } %>
-  <%= link_to "Create Account", "#", class: "btn btn-success", data: { toggle: "modal", target: "#loginModal" } %>
+  <%= link_to "Login", new_user_session_path, class: "btn btn-success" %>
+  <%= link_to "Create Account", new_user_registration_path, class: "btn btn-success" %>
 <% end %>
 
     </div>
   </div>
 </nav>
-
-<div class="container">
-  <center>
-<% if current_user %>
-<p>Current user logged in:</p>
-<%= current_user.email %>
-<%= image_tag(current_user.avatar_url) %> <br>
-<%= link_to "Edit Account", edit_user_registration_path %>
-<%= button_to "Logout", destroy_user_session_path, data: {turbo: "false"}, method: :delete %>
-<% end %>
-
-</center>
-</div>
-
 
 <!-- Flash Messages -->
 <% flash.each do |key, message| %>
