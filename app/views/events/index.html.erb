@@ -1,15 +1,14 @@
-
 <%= link_to 'Back', root_path %>
 
-<h1>Meetings</h1>
+<h1>Events</h1>
 
 <div id="events">
-  <% @events.each do |events| %>
-    <%= render events %>
+  <% @events.each do |event| %>
+    <%= render event %>
     <p>
-      <%= link_to "Show this events", events %>
+      <%= link_to "Show this event", event %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New events", new_events_path %>
+<%= link_to "New event", new_event_path %>

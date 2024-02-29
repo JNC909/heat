@@ -1,1 +1,1 @@
-json.partial! "events/events", events: @events
+json.partial! "events/event", event: @event

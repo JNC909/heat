@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
   get 'meetings_members/index'
   resources :members
   root 'pages#home'
