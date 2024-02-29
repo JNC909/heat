@@ -10,13 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_26_230434) do
+ActiveRecord::Schema[7.0].define(version: 2024_02_29_022311) do
   create_table "meetings", force: :cascade do |t|
     t.string "name"
     t.date "date"
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "meetings_members", force: :cascade do |t|
+    t.integer "meeting_id", null: false
+    t.integer "member_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["meeting_id"], name: "index_meetings_members_on_meeting_id"
+    t.index ["member_id"], name: "index_meetings_members_on_member_id"
   end
 
   create_table "members", force: :cascade do |t|
@@ -43,4 +52,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_26_230434) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "meetings_members", "meetings"
+  add_foreign_key "meetings_members", "members"
 end
