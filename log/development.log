@@ -6666,3 +6666,2464 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2422)
 
 
+Started GET "/" for 192.168.65.1 at 2024-02-29 01:16:21 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 14.6ms | Allocations: 2019)
+  Rendered layout layouts/application.html.erb (Duration: 243.1ms | Allocations: 36764)
+Completed 200 OK in 297ms (Views: 256.7ms | ActiveRecord: 0.0ms | Allocations: 41225)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 01:16:24 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 2.3ms | Allocations: 289)
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 44.3ms | Allocations: 6416)
+  Rendered layout layouts/application.html.erb (Duration: 54.9ms | Allocations: 8367)
+Completed 200 OK in 88ms (Views: 53.3ms | ActiveRecord: 6.1ms | Allocations: 12112)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 01:16:26 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 724)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 2103)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 2411)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 01:16:29 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 950)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 2611)
+Completed 200 OK in 41ms (Views: 33.6ms | ActiveRecord: 1.5ms | Allocations: 2897)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 01:16:29 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:6
+  Rendered members/_member.html.erb (Duration: 2.8ms | Allocations: 220)
+  Rendered members/index.html.erb within layouts/application (Duration: 41.5ms | Allocations: 5102)
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 6685)
+Completed 200 OK in 85ms (Views: 61.7ms | ActiveRecord: 5.0ms | Allocations: 8042)
+
+
+Started GET "/members/new" for 192.168.65.1 at 2024-02-29 01:16:32 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/new.html.erb within layouts/application
+  Rendered members/_form.html.erb (Duration: 28.9ms | Allocations: 3307)
+  Rendered members/new.html.erb within layouts/application (Duration: 35.1ms | Allocations: 3618)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 5127)
+Completed 200 OK in 58ms (Views: 53.4ms | ActiveRecord: 0.0ms | Allocations: 5550)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 01:16:37 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 37)
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 992)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 2661)
+Completed 200 OK in 40ms (Views: 32.8ms | ActiveRecord: 1.0ms | Allocations: 2995)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 01:16:39 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 726)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 2103)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 2374)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 01:16:39 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (2.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.5ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 28.3ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 79.3ms | Allocations: 2528)
+Completed 200 OK in 92ms (Views: 80.6ms | ActiveRecord: 2.2ms | Allocations: 2810)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 01:20:12 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:6
+  Rendered members/_member.html.erb (Duration: 0.4ms | Allocations: 21)
+  Rendered members/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1029)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 2396)
+Completed 200 OK in 44ms (Views: 35.3ms | ActiveRecord: 1.2ms | Allocations: 2684)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 01:20:13 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:6
+  Rendered members/_member.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1018)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 2392)
+Completed 200 OK in 35ms (Views: 30.1ms | ActiveRecord: 1.3ms | Allocations: 2676)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 01:20:14 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (21.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:6
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 74.7ms | Allocations: 1013)
+  Rendered layout layouts/application.html.erb (Duration: 127.1ms | Allocations: 2384)
+Completed 200 OK in 137ms (Views: 109.3ms | ActiveRecord: 21.2ms | Allocations: 2668)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 01:20:14 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 2.5ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 2559)
+Completed 200 OK in 48ms (Views: 38.2ms | ActiveRecord: 1.4ms | Allocations: 2841)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 01:20:15 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (3.7ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:6
+  Rendered members/_member.html.erb (Duration: 0.3ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 21.9ms | Allocations: 1013)
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 2380)
+Completed 200 OK in 58ms (Views: 46.4ms | ActiveRecord: 3.7ms | Allocations: 2662)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 01:20:19 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:6
+  Rendered members/_member.html.erb (Duration: 0.6ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1000)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 2367)
+Completed 200 OK in 33ms (Views: 27.7ms | ActiveRecord: 0.8ms | Allocations: 2649)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 01:20:20 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 6.4ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 21.7ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 2569)
+Completed 200 OK in 55ms (Views: 46.9ms | ActiveRecord: 1.7ms | Allocations: 2852)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 01:20:20 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:6
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1021)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 2393)
+Completed 200 OK in 29ms (Views: 22.1ms | ActiveRecord: 0.6ms | Allocations: 2675)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 01:20:37 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 2546)
+Completed 200 OK in 32ms (Views: 25.3ms | ActiveRecord: 1.6ms | Allocations: 2828)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMeetingsMembersJoinTable (20240229012659)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240229012659"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 192.168.65.1 at 2024-02-29 01:35:17 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 13.7ms | Allocations: 2108)
+  Rendered layout layouts/application.html.erb (Duration: 319.8ms | Allocations: 36787)
+Completed 200 OK in 384ms (Views: 336.8ms | ActiveRecord: 0.0ms | Allocations: 41248)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 01:35:20 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant MeetingsMembersController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  MeetingsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 01:36:36 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant MeetingsMembersController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  MeetingsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for 192.168.65.1 at 2024-02-29 01:42:23 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.5ms | Allocations: 2123)
+  Rendered layout layouts/application.html.erb (Duration: 430.3ms | Allocations: 36966)
+Completed 200 OK in 505ms (Views: 443.9ms | ActiveRecord: 0.0ms | Allocations: 41451)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 01:42:27 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 2991)
+
+
+  
+NameError (uninitialized constant MeetingsMembersController::MeetingsMember
+
+    @meetings_members = MeetingsMember.all
+                        ^^^^^^^^^^^^^^
+Did you mean?  MeetingsMembersHelper):
+  
+app/controllers/meetings_members_controller.rb:6:in `index'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMeetingsMembers (20240229014433)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "meetings_members" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "meeting_id" integer NOT NULL, "member_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_5460785561"
+FOREIGN KEY ("meeting_id")
+  REFERENCES "meetings" ("id")
+, CONSTRAINT "fk_rails_1d6dc96bce"
+FOREIGN KEY ("member_id")
+  REFERENCES "members" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_meetings_members_on_meeting_id" ON "meetings_members" ("meeting_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_meetings_members_on_member_id" ON "meetings_members" ("member_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240229014433"]]
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 192.168.65.1 at 2024-02-29 01:47:04 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.0ms | Allocations: 2117)
+  Rendered layout layouts/application.html.erb (Duration: 477.8ms | Allocations: 36916)
+Completed 200 OK in 544ms (Views: 489.7ms | ActiveRecord: 0.0ms | Allocations: 41401)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 01:47:08 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 2103)
+Completed 200 OK in 108ms (Views: 58.5ms | ActiveRecord: 0.0ms | Allocations: 5253)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 01:51:02 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 23.9ms | Allocations: 2102)
+  Rendered layout layouts/application.html.erb (Duration: 991.2ms | Allocations: 36939)
+Completed 200 OK in 1068ms (Views: 1008.8ms | ActiveRecord: 0.0ms | Allocations: 41424)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 01:51:05 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 39.7ms | Allocations: 2479)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 2577)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms | Allocations: 5337)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze; @meetings.each do |meeting| 
+                   ^^^^^):
+    1: <h1>Member-Meeting Associations</h1>
+    2: 
+    3: <% @meetings.each do |meeting| %>
+    4:   <div class="meeting">
+    5:     <h2><%= meeting.name %></h2>
+    6:     <h3>Date: <%= meeting.date %></h3>
+  
+app/views/meetings_members/index.html.erb:3
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 01:54:30 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2084)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2173)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 3123)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze; @meetings.each do |meetings_members| 
+                   ^^^^^):
+    1: <h1>Member-Meeting Associations</h1>
+    2: 
+    3: <% @meetings.each do |meetings_members| %>
+    4:   <div class="meeting">
+    5:     <h2><%= meeting.name %></h2>
+    6:     <h3>Date: <%= meeting.date %></h3>
+  
+app/views/meetings_members/index.html.erb:3
+Started GET "/" for 192.168.65.1 at 2024-02-29 01:55:06 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 13.4ms | Allocations: 1454)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 3311)
+Completed 200 OK in 51ms (Views: 42.2ms | ActiveRecord: 0.0ms | Allocations: 4260)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 01:55:11 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1972)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2061)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 2746)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;   @member_meetings.each do |member_meeting| 
+                            ^^^^^):
+    1: <h1>Member Meetings</h1>
+    2: 
+    3: <div id="member_meetings">
+    4:   <% @member_meetings.each do |member_meeting| %>
+    5:     <div>
+    6:       <p>Meeting: <%= link_to member_meeting.meeting.name, member_meeting.meeting %></p>
+    7:       <p>Member: <%= link_to member_meeting.member.member_name, member_meeting.member %></p>
+  
+app/views/meetings_members/index.html.erb:4
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 01:55:19 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1710)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1789)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 2068)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;   @member_meetings.each do |member_meeting| 
+                            ^^^^^):
+    1: <h1>Member Meetings</h1>
+    2: 
+    3: <div id="member_meetings">
+    4:   <% @member_meetings.each do |member_meeting| %>
+    5:     <div>
+    6:       <p>Meeting: <%= link_to member_meeting.meeting.name, member_meeting.meeting %></p>
+    7:       <p>Member: <%= link_to member_meeting.member.member_name, member_meeting.member %></p>
+  
+app/views/meetings_members/index.html.erb:4
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 01:57:03 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2089)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 2178)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms | Allocations: 3103)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;   @member_meetings.each do |member_meeting| 
+                            ^^^^^):
+    3: <h1>Member Meetings</h1>
+    4: 
+    5: <div id="member_meetings">
+    6:   <% @member_meetings.each do |member_meeting| %>
+    7:     <div>
+    8:       <p>Meeting: <%= link_to member_meeting.meeting.name, member_meeting.meeting %></p>
+    9:       <p>Member: <%= link_to member_meeting.member.member_name, member_meeting.member %></p>
+  
+app/views/meetings_members/index.html.erb:6
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 01:57:04 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 2.1ms | Allocations: 287)
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 41.8ms | Allocations: 6541)
+  Rendered layout layouts/application.html.erb (Duration: 58.1ms | Allocations: 8771)
+Completed 200 OK in 92ms (Views: 54.9ms | ActiveRecord: 6.7ms | Allocations: 12663)
+
+
+Started GET "/meetings/8" for 192.168.65.1 at 2024-02-29 01:57:05 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMeeting Load (1.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:63:in `set_meeting'
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/show.html.erb within layouts/application
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered meetings/show.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 2530)
+Completed 200 OK in 65ms (Views: 37.4ms | ActiveRecord: 1.3ms | Allocations: 5458)
+
+
+Started GET "/meetings/new" for 192.168.65.1 at 2024-02-29 01:57:06 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 27.9ms | Allocations: 2993)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 38.6ms | Allocations: 3292)
+  Rendered layout layouts/application.html.erb (Duration: 60.2ms | Allocations: 4800)
+Completed 200 OK in 71ms (Views: 63.4ms | ActiveRecord: 0.0ms | Allocations: 5198)
+
+
+Started GET "/meetings/new" for 192.168.65.1 at 2024-02-29 01:57:06 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 4.6ms | Allocations: 1310)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1401)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 2779)
+Completed 200 OK in 42ms (Views: 36.3ms | ActiveRecord: 0.0ms | Allocations: 3111)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 01:59:27 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.0ms | Allocations: 2099)
+  Rendered layout layouts/application.html.erb (Duration: 378.9ms | Allocations: 36819)
+Completed 200 OK in 448ms (Views: 392.5ms | ActiveRecord: 0.0ms | Allocations: 41304)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 01:59:29 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 46.4ms | Allocations: 2476)
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 2574)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms | Allocations: 5334)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;   @member_meetings.each do |member_meeting| 
+                            ^^^^^):
+    3: <h1>Member Meetings</h1>
+    4: 
+    5: <div id="member_meetings">
+    6:   <% @member_meetings.each do |member_meeting| %>
+    7:     <div>
+    8:       <p>Meeting: <%= link_to member_meeting.meeting.name, member_meeting.meeting %></p>
+    9:       <p>Member: <%= link_to member_meeting.member.member_name, member_meeting.member %></p>
+  
+app/views/meetings_members/index.html.erb:6
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:00:54 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1811)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 1891)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 2189)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;   @member_meetings.each do |member_meeting| 
+                            ^^^^^):
+    3: <h1>Member Meetings</h1>
+    4: 
+    5: <div id="member_meetings">
+    6:   <% @member_meetings.each do |member_meeting| %>
+    7:     <div>
+    8:       <p>Meeting: <%= link_to member_meeting.meeting.name, member_meeting.meeting %></p>
+    9:       <p>Member: <%= link_to member_meeting.member.member_name, member_meeting.member %></p>
+  
+app/views/meetings_members/index.html.erb:6
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:02:38 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1764)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 1843)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 2098)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;   @member_meetings.each do |member_meeting| 
+                            ^^^^^):
+    3: <h1>Member Meetings</h1>
+    4: 
+    5: <div id="member_meetings">
+    6:   <% @member_meetings.each do |member_meeting| %>
+    7:     <div>
+    8:       <p>Meeting: <%= link_to member_meeting.meeting.name, member_meeting.meeting %></p>
+    9:       <p>Member: <%= link_to member_meeting.member.member_name, member_meeting.member %></p>
+  
+app/views/meetings_members/index.html.erb:6
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:03:32 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 17.2ms | Allocations: 2108)
+  Rendered layout layouts/application.html.erb (Duration: 561.5ms | Allocations: 36776)
+Completed 200 OK in 668ms (Views: 577.7ms | ActiveRecord: 0.0ms | Allocations: 41261)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:03:35 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.3ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 1143)
+  Rendered layout layouts/application.html.erb (Duration: 72.3ms | Allocations: 3074)
+Completed 200 OK in 144ms (Views: 92.0ms | ActiveRecord: 1.3ms | Allocations: 5855)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:05:22 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.0ms | Allocations: 767)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 2152)
+Completed 200 OK in 34ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 2446)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 02:05:42 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 2.6ms | Allocations: 289)
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 46.4ms | Allocations: 6393)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 8322)
+Completed 200 OK in 99ms (Views: 59.1ms | ActiveRecord: 6.2ms | Allocations: 12183)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:05:44 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 783)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 2161)
+Completed 200 OK in 29ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 2466)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:05:45 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (2.0ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:6
+  Rendered members/_member.html.erb (Duration: 2.2ms | Allocations: 220)
+  Rendered members/index.html.erb within layouts/application (Duration: 41.7ms | Allocations: 5090)
+  Rendered layout layouts/application.html.erb (Duration: 58.5ms | Allocations: 6673)
+Completed 200 OK in 86ms (Views: 58.4ms | ActiveRecord: 6.3ms | Allocations: 8801)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:05:48 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (2.4ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 635)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 2297)
+Completed 200 OK in 39ms (Views: 28.7ms | ActiveRecord: 2.4ms | Allocations: 2611)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:05:49 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 771)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 2148)
+Completed 200 OK in 30ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 2419)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:05:49 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:6
+  Rendered members/_member.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1006)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 2373)
+Completed 200 OK in 26ms (Views: 20.8ms | ActiveRecord: 0.7ms | Allocations: 2656)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:06:12 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1465)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 3312)
+Completed 200 OK in 45ms (Views: 35.3ms | ActiveRecord: 0.0ms | Allocations: 4250)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:06:14 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 2.7ms | Allocations: 199)
+  Rendered members/index.html.erb within layouts/application (Duration: 19.0ms | Allocations: 1774)
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 3339)
+Completed 200 OK in 58ms (Views: 49.1ms | ActiveRecord: 1.1ms | Allocations: 4063)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:06:15 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 781)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 2165)
+Completed 200 OK in 26ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 2457)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:06:18 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.2ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1005)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 2933)
+Completed 200 OK in 46ms (Views: 38.1ms | ActiveRecord: 1.2ms | Allocations: 3616)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:06:19 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 769)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 2146)
+Completed 200 OK in 31ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 2436)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:06:20 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.3ms | Allocations: 26)
+  Rendered members/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1043)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 2410)
+Completed 200 OK in 27ms (Views: 22.4ms | ActiveRecord: 0.7ms | Allocations: 2698)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:08:34 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.4ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 624)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 2309)
+Completed 200 OK in 49ms (Views: 37.4ms | ActiveRecord: 1.4ms | Allocations: 2593)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:08:35 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 761)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 2138)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 2408)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:08:36 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1030)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 2398)
+Completed 200 OK in 28ms (Views: 22.7ms | ActiveRecord: 0.7ms | Allocations: 2680)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:10:43 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.1ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 624)
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 2276)
+Completed 200 OK in 46ms (Views: 36.0ms | ActiveRecord: 1.1ms | Allocations: 2558)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:10:44 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1036)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 2403)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 0.6ms | Allocations: 2685)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:11:24 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (3.5ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 29.2ms | Allocations: 1039)
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 2406)
+Completed 200 OK in 74ms (Views: 59.8ms | ActiveRecord: 3.5ms | Allocations: 2688)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:13:19 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1469)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 3316)
+Completed 200 OK in 54ms (Views: 46.0ms | ActiveRecord: 0.0ms | Allocations: 4273)
+
+
+Started GET "/users/sign_in" for 192.168.65.1 at 2024-02-29 02:13:20 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 8.2ms | Allocations: 780)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 56.5ms | Allocations: 4164)
+  Rendered layout layouts/application.html.erb (Duration: 154.4ms | Allocations: 5729)
+Completed 200 OK in 240ms (Views: 180.8ms | ActiveRecord: 6.3ms | Allocations: 14051)
+
+
+Started GET "/users/sign_in" for 192.168.65.1 at 2024-02-29 02:13:21 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 291)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1377)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 2747)
+Completed 200 OK in 40ms (Views: 34.4ms | ActiveRecord: 0.0ms | Allocations: 3634)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:13:26 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 744)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 2121)
+Completed 200 OK in 33ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 2391)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:13:27 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.3ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1156)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 3107)
+Completed 200 OK in 42ms (Views: 33.4ms | ActiveRecord: 1.3ms | Allocations: 3792)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:13:31 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 751)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 2128)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 2418)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:13:32 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 731)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 2108)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 2378)
+
+
+  [1m[36mMeeting Load (0.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  [1m[36mMeetingsMember Load (7.1ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:17:23 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 17.6ms | Allocations: 2102)
+  Rendered layout layouts/application.html.erb (Duration: 509.2ms | Allocations: 36629)
+Completed 200 OK in 563ms (Views: 520.9ms | ActiveRecord: 0.0ms | Allocations: 41114)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:17:27 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (2.1ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 47.5ms | Allocations: 2451)
+  Rendered layout layouts/application.html.erb (Duration: 75.8ms | Allocations: 4388)
+Completed 200 OK in 114ms (Views: 82.4ms | ActiveRecord: 2.1ms | Allocations: 7275)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:17:28 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 771)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 2150)
+Completed 200 OK in 31ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 2464)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:17:29 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 8.4ms | Allocations: 276)
+  Rendered members/index.html.erb within layouts/application (Duration: 102.6ms | Allocations: 6644)
+  Rendered layout layouts/application.html.erb (Duration: 299.7ms | Allocations: 8318)
+Completed 200 OK in 329ms (Views: 291.2ms | ActiveRecord: 18.1ms | Allocations: 10802)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:17:29 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.8ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 772)
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 2490)
+Completed 200 OK in 38ms (Views: 30.7ms | ActiveRecord: 1.8ms | Allocations: 2834)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:17:29 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.3ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1037)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 2422)
+Completed 200 OK in 36ms (Views: 25.3ms | ActiveRecord: 1.1ms | Allocations: 2705)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:17:30 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 758)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 2135)
+Completed 200 OK in 28ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 2406)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:17:31 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.6ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.4ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 1045)
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 2413)
+Completed 200 OK in 42ms (Views: 34.2ms | ActiveRecord: 1.6ms | Allocations: 2695)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 02:17:31 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (2.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 4.1ms | Allocations: 233)
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 45.6ms | Allocations: 4897)
+  Rendered layout layouts/application.html.erb (Duration: 67.6ms | Allocations: 6827)
+Completed 200 OK in 103ms (Views: 68.9ms | ActiveRecord: 7.2ms | Allocations: 10422)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:17:31 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered members/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1032)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 2399)
+Completed 200 OK in 40ms (Views: 33.7ms | ActiveRecord: 0.8ms | Allocations: 2706)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:17:32 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 786)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 2163)
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 2434)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:17:33 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (3.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.7ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 2400)
+Completed 200 OK in 37ms (Views: 30.1ms | ActiveRecord: 3.2ms | Allocations: 2683)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 02:17:33 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (5.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.4ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 2546)
+Completed 200 OK in 46ms (Views: 34.0ms | ActiveRecord: 5.9ms | Allocations: 2829)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:17:34 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 755)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 2132)
+Completed 200 OK in 29ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 2402)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:17:35 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1027)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 2394)
+Completed 200 OK in 41ms (Views: 34.7ms | ActiveRecord: 1.0ms | Allocations: 2676)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:17:35 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.1ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 705)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 2381)
+Completed 200 OK in 35ms (Views: 28.1ms | ActiveRecord: 1.1ms | Allocations: 2677)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:17:37 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 728)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 2112)
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 2384)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:17:37 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1021)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 2389)
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 1.2ms | Allocations: 2671)
+
+
+  [1m[36mMeetingsMember Load (1.4ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  [1m[36mMember Load (1.5ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  [1m[36mMeeting Load (1.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:19:05 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 13.4ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 459.2ms | Allocations: 36888)
+Completed 200 OK in 510ms (Views: 472.0ms | ActiveRecord: 0.0ms | Allocations: 41373)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:19:07 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.2ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 40.0ms | Allocations: 1862)
+  Rendered layout layouts/application.html.erb (Duration: 81.0ms | Allocations: 3826)
+Completed 200 OK in 132ms (Views: 89.5ms | ActiveRecord: 1.2ms | Allocations: 6714)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:19:08 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 759)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 2145)
+Completed 200 OK in 36ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 2460)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:19:09 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.6ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 2.0ms | Allocations: 276)
+  Rendered members/index.html.erb within layouts/application (Duration: 42.5ms | Allocations: 6629)
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 8218)
+Completed 200 OK in 83ms (Views: 57.1ms | ActiveRecord: 6.9ms | Allocations: 10584)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEventsMembersJoinTable (20240229022311)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (4.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240229022311"]]
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:24:30 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.7ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 440.9ms | Allocations: 36825)
+Completed 200 OK in 501ms (Views: 455.6ms | ActiveRecord: 0.0ms | Allocations: 41310)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:24:33 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.7ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 41.9ms | Allocations: 1862)
+  Rendered layout layouts/application.html.erb (Duration: 76.2ms | Allocations: 3799)
+Completed 200 OK in 147ms (Views: 99.8ms | ActiveRecord: 1.7ms | Allocations: 6687)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:24:34 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 762)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 2148)
+Completed 200 OK in 43ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:24:34 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.4ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 2.5ms | Allocations: 276)
+  Rendered members/index.html.erb within layouts/application (Duration: 43.9ms | Allocations: 6632)
+  Rendered layout layouts/application.html.erb (Duration: 62.9ms | Allocations: 8221)
+Completed 200 OK in 89ms (Views: 61.1ms | ActiveRecord: 6.7ms | Allocations: 10587)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:24:35 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 820)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 2205)
+Completed 200 OK in 53ms (Views: 43.9ms | ActiveRecord: 0.0ms | Allocations: 2513)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:24:36 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.4ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1104)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 2471)
+Completed 200 OK in 42ms (Views: 35.7ms | ActiveRecord: 0.9ms | Allocations: 2761)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:24:36 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (0.9ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 705)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 2361)
+Completed 200 OK in 41ms (Views: 31.3ms | ActiveRecord: 0.9ms | Allocations: 2660)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:24:37 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 740)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 2118)
+Completed 200 OK in 33ms (Views: 27.1ms | ActiveRecord: 0.0ms | Allocations: 2391)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:24:38 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 2409)
+Completed 200 OK in 33ms (Views: 24.8ms | ActiveRecord: 1.1ms | Allocations: 2691)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:30:54 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.9ms | Allocations: 1478)
+  Rendered layout layouts/application.html.erb (Duration: 41.2ms | Allocations: 3325)
+Completed 200 OK in 67ms (Views: 54.7ms | ActiveRecord: 0.0ms | Allocations: 4266)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:30:55 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.2ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 1283)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 3186)
+Completed 200 OK in 53ms (Views: 41.2ms | ActiveRecord: 3.3ms | Allocations: 3907)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:31:00 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 2155)
+Completed 200 OK in 43ms (Views: 37.4ms | ActiveRecord: 0.0ms | Allocations: 2447)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:31:00 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.4ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 4.1ms | Allocations: 202)
+  Rendered members/index.html.erb within layouts/application (Duration: 34.5ms | Allocations: 1814)
+  Rendered layout layouts/application.html.erb (Duration: 59.8ms | Allocations: 3386)
+Completed 200 OK in 73ms (Views: 63.9ms | ActiveRecord: 1.4ms | Allocations: 4102)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:34:02 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.4ms | Allocations: 953)
+  Rendered layout layouts/application.html.erb (Duration: 74.9ms | Allocations: 16174)
+Completed 200 OK in 82ms (Views: 78.1ms | ActiveRecord: 0.0ms | Allocations: 16825)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:34:04 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.2ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 3017)
+Completed 200 OK in 54ms (Views: 28.2ms | ActiveRecord: 7.4ms | Allocations: 4921)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:34:05 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 782)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 2159)
+Completed 200 OK in 51ms (Views: 46.2ms | ActiveRecord: 0.0ms | Allocations: 2450)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:34:05 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.1ms | Allocations: 46)
+  Rendered members/index.html.erb within layouts/application (Duration: 20.0ms | Allocations: 3251)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 4827)
+Completed 200 OK in 55ms (Views: 34.1ms | ActiveRecord: 6.2ms | Allocations: 6740)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 02:34:06 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 3.6ms | Allocations: 233)
+  Rendered meetings/_meeting.html.erb (Duration: 0.3ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 49.0ms | Allocations: 4863)
+  Rendered layout layouts/application.html.erb (Duration: 66.4ms | Allocations: 6793)
+Completed 200 OK in 105ms (Views: 60.8ms | ActiveRecord: 10.9ms | Allocations: 9783)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:34:07 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 780)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 2157)
+Completed 200 OK in 26ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 2447)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:34:11 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered members/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 1041)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 2408)
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 0.9ms | Allocations: 2696)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:34:12 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 743)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2120)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 2390)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:34:16 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.4ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 2400)
+Completed 200 OK in 36ms (Views: 28.8ms | ActiveRecord: 1.4ms | Allocations: 2682)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:34:19 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (3.8ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 31.7ms | Allocations: 705)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 2372)
+Completed 200 OK in 69ms (Views: 57.9ms | ActiveRecord: 3.8ms | Allocations: 2671)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:34:20 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 743)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 2120)
+Completed 200 OK in 28ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 2390)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:34:21 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.3ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1024)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 2391)
+Completed 200 OK in 33ms (Views: 27.4ms | ActiveRecord: 0.9ms | Allocations: 2673)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 02:34:34 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (3.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.4ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 2558)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 3.2ms | Allocations: 2841)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 02:34:37 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (4.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 2549)
+Completed 200 OK in 44ms (Views: 31.4ms | ActiveRecord: 4.8ms | Allocations: 2831)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:34:38 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 728)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 2105)
+Completed 200 OK in 27ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 2375)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:34:38 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 2409)
+Completed 200 OK in 28ms (Views: 22.6ms | ActiveRecord: 0.9ms | Allocations: 2691)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:34:40 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 728)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 2105)
+Completed 200 OK in 29ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 2375)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:38:14 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1507)
+  Rendered layout layouts/application.html.erb (Duration: 76.2ms | Allocations: 17010)
+Completed 200 OK in 97ms (Views: 83.7ms | ActiveRecord: 0.0ms | Allocations: 18094)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:38:16 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (4.3ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 76.2ms | Allocations: 1321)
+  Rendered layout layouts/application.html.erb (Duration: 102.2ms | Allocations: 3250)
+Completed 200 OK in 180ms (Views: 132.6ms | ActiveRecord: 16.1ms | Allocations: 5336)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:38:17 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 767)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 2144)
+Completed 200 OK in 47ms (Views: 35.9ms | ActiveRecord: 0.0ms | Allocations: 2434)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:20 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 1.9ms | Allocations: 211)
+  Rendered members/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 3693)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 5269)
+Completed 200 OK in 59ms (Views: 39.2ms | ActiveRecord: 5.5ms | Allocations: 7351)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:38:24 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.6ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 705)
+  Rendered layout layouts/application.html.erb (Duration: 35.3ms | Allocations: 2360)
+Completed 200 OK in 46ms (Views: 38.4ms | ActiveRecord: 1.6ms | Allocations: 2681)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:26 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 2409)
+Completed 200 OK in 31ms (Views: 23.9ms | ActiveRecord: 1.0ms | Allocations: 2692)
+
+
+Started GET "/members/1" for 192.168.65.1 at 2024-02-29 02:38:32 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/members_controller.rb:63:in `set_member'
+  Rendering layout layouts/application.html.erb
+  Rendering members/show.html.erb within layouts/application
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered members/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1047)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 2519)
+Completed 200 OK in 49ms (Views: 27.8ms | ActiveRecord: 1.3ms | Allocations: 5424)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:35 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1040)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 2408)
+Completed 200 OK in 33ms (Views: 26.0ms | ActiveRecord: 1.2ms | Allocations: 2697)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:38:38 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 773)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 2150)
+Completed 200 OK in 65ms (Views: 58.1ms | ActiveRecord: 0.0ms | Allocations: 2421)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:39 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 2400)
+Completed 200 OK in 35ms (Views: 28.4ms | ActiveRecord: 0.8ms | Allocations: 2682)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:38:41 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (2.6ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 704)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 2353)
+Completed 200 OK in 37ms (Views: 28.5ms | ActiveRecord: 2.6ms | Allocations: 2646)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 02:38:42 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 17.0ms | Allocations: 217)
+  Rendered meetings/_meeting.html.erb (Duration: 1.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 123.7ms | Allocations: 3406)
+  Rendered layout layouts/application.html.erb (Duration: 138.5ms | Allocations: 5336)
+Completed 200 OK in 165ms (Views: 138.8ms | ActiveRecord: 5.6ms | Allocations: 8247)
+
+
+Started GET "/" for 192.168.65.1 at 2024-02-29 02:38:44 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 756)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 2133)
+Completed 200 OK in 31ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 2423)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:44 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (2.4ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered members/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1026)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 2393)
+Completed 200 OK in 34ms (Views: 27.2ms | ActiveRecord: 2.4ms | Allocations: 2681)
+
+
+Started GET "/meetings_members" for 192.168.65.1 at 2024-02-29 02:38:45 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.1ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 705)
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 2363)
+Completed 200 OK in 76ms (Views: 63.0ms | ActiveRecord: 1.1ms | Allocations: 2659)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 02:38:46 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.6ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 2546)
+Completed 200 OK in 38ms (Views: 30.6ms | ActiveRecord: 1.0ms | Allocations: 2829)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:46 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.5ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1027)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 2394)
+Completed 200 OK in 44ms (Views: 34.7ms | ActiveRecord: 1.1ms | Allocations: 2676)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:46 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.9ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 1036)
+  Rendered layout layouts/application.html.erb (Duration: 40.4ms | Allocations: 2403)
+Completed 200 OK in 49ms (Views: 41.7ms | ActiveRecord: 1.9ms | Allocations: 2685)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:47 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (2.0ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 28.9ms | Allocations: 1045)
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 2412)
+Completed 200 OK in 61ms (Views: 49.1ms | ActiveRecord: 2.0ms | Allocations: 2694)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:47 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1027)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 2394)
+Completed 200 OK in 41ms (Views: 34.4ms | ActiveRecord: 0.8ms | Allocations: 2676)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 02:38:47 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (1.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 24.4ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 2552)
+Completed 200 OK in 50ms (Views: 42.8ms | ActiveRecord: 1.8ms | Allocations: 2834)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:47 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.3ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 1039)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 2406)
+Completed 200 OK in 48ms (Views: 42.6ms | ActiveRecord: 0.8ms | Allocations: 2688)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:47 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.3ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 2400)
+Completed 200 OK in 62ms (Views: 55.2ms | ActiveRecord: 1.0ms | Allocations: 2683)
+
+
+Started GET "/meetings" for 192.168.65.1 at 2024-02-29 02:38:48 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (2.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.5ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.3ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 2551)
+Completed 200 OK in 39ms (Views: 32.5ms | ActiveRecord: 2.3ms | Allocations: 2833)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:48 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.8ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 1069)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 2436)
+Completed 200 OK in 49ms (Views: 42.4ms | ActiveRecord: 0.8ms | Allocations: 2718)
+
+
+Started GET "/members" for 192.168.65.1 at 2024-02-29 02:38:48 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 1036)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 2403)
+Completed 200 OK in 42ms (Views: 34.7ms | ActiveRecord: 0.8ms | Allocations: 2685)
+
+
+  [1m[36mMeetingsMember Load (0.9ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvents (20240229194801)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "event_link" varchar, "event_name" varchar, "event_datetime" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240229194801"]]
+  [1m[36mTRANSACTION (8.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.17.0.1 at 2024-02-29 19:51:29 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1941)
+  Rendered layout layouts/application.html.erb (Duration: 220.4ms | Allocations: 96121)
+Completed 200 OK in 238ms (Views: 225.0ms | ActiveRecord: 0.0ms | Allocations: 103940)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 19:51:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.4ms | Allocations: 289)
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 6488)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8342)
+Completed 200 OK in 45ms (Views: 14.3ms | ActiveRecord: 0.5ms | Allocations: 12354)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 19:51:34 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 951)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2484)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 2804)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 19:51:34 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 901)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2440)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 2729)
+
+
+Started GET "/members" for 172.17.0.1 at 2024-02-29 19:51:35 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.7ms | Allocations: 220)
+  Rendered members/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 5004)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 6581)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.6ms | Allocations: 8714)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 19:51:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 903)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2439)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 2753)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-29 19:51:39 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 633)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2010)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2281)
+
+
+Started GET "/members" for 172.17.0.1 at 2024-02-29 19:51:40 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 913)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2281)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 2564)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 19:51:40 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2423)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 2705)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-29 19:54:08 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 36811)
+Completed 200 OK in 56ms (Views: 51.7ms | ActiveRecord: 0.0ms | Allocations: 41309)
+
+
+Started GET "/members" for 172.17.0.1 at 2024-02-29 19:54:09 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 1.0ms | Allocations: 276)
+  Rendered members/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 6549)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 8139)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.6ms | Allocations: 11031)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 19:54:09 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.7ms | Allocations: 233)
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 4881)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 6679)
+Completed 200 OK in 20ms (Views: 13.2ms | ActiveRecord: 0.5ms | Allocations: 9641)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-29 19:54:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 641)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2019)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2312)
+
+
+Started GET "/members" for 172.17.0.1 at 2024-02-29 19:54:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered members/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 906)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2273)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 2561)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 19:54:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 898)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2434)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 2724)
+
+
+Started GET "/events" for 172.17.0.1 at 2024-02-29 19:54:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:6
+  Rendered events/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1069)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2890)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 4252)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-29 19:54:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 664)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2041)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2331)
+
+
+Started GET "/events/new" for 172.17.0.1 at 2024-02-29 19:54:15 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 7.9ms | Allocations: 3408)
+  Rendered events/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 3721)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 5229)
+Completed 200 OK in 19ms (Views: 14.0ms | ActiveRecord: 0.3ms | Allocations: 8736)
+
+
+Started GET "/events" for 172.17.0.1 at 2024-02-29 19:54:20 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:6
+  Rendered events/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 666)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2220)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 2549)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-29 19:54:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 663)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2040)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2310)
+
+
+Started GET "/members" for 172.17.0.1 at 2024-02-29 19:54:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered members/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 942)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2316)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 2602)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 19:54:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 895)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2424)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 2709)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-29 19:54:26 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 643)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2020)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2290)
+
+
+Started GET "/members" for 172.17.0.1 at 2024-02-29 19:54:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/members/index.html.erb:8
+  Rendered members/_member.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered members/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 910)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2277)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 2559)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 19:54:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered meetings/_meeting.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 891)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2426)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 2708)
+
+
+Started GET "/events" for 172.17.0.1 at 2024-02-29 19:54:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:6
+  Rendered events/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 599)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2122)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 2404)
+
+
+Started GET "/events/new" for 172.17.0.1 at 2024-02-29 19:54:28 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 1.1ms | Allocations: 1204)
+  Rendered events/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1292)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2669)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2959)
+
+
+Started POST "/events" for 172.17.0.1 at 2024-02-29 19:54:50 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "event"=>{"event_link"=>"https://www.youtube.com/watch?v=dQw4w9WgXcQ", "event_name"=>"TEST", "event_datetime"=>"2024-02-29T13:54"}, "commit"=>"Create Event"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/events_controller.rb:27:in `block in create'
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_link", "event_name", "event_datetime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["event_link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["event_name", "TEST"], ["event_datetime", "2024-02-29 13:54:00"], ["created_at", "2024-02-29 19:54:50.574384"], ["updated_at", "2024-02-29 19:54:50.574384"]]
+  ↳ app/controllers/events_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/events_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/events/1
+Completed 302 Found in 10ms (ActiveRecord: 5.1ms | Allocations: 3950)
+
+
+Started GET "/events/1" for 172.17.0.1 at 2024-02-29 19:54:50 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:63:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_event.html.erb (Duration: 0.5ms | Allocations: 253)
+  Rendered events/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1426)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2904)
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 5789)
+
+
+Started GET "/events/1/edit" for 172.17.0.1 at 2024-02-29 19:54:51 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:63:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 1.3ms | Allocations: 1376)
+  Rendered events/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1653)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3022)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 3841)
+
+
+Started GET "/events" for 172.17.0.1 at 2024-02-29 19:54:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:6
+  Rendered events/_event.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered events/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2300)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 2583)
+
+
+Started GET "/events/1" for 172.17.0.1 at 2024-02-29 19:54:55 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:63:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_event.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered events/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 586)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1945)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2699)
+
+
+Started GET "/events/1" for 172.17.0.1 at 2024-02-29 19:54:56 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:63:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_event.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered events/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 574)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1940)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 2696)
+
+
+Started DELETE "/events/1" for 172.17.0.1 at 2024-02-29 19:54:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:63:in `set_event'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/events_controller.rb:52:in `destroy'
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/events_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/events_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/events
+Completed 302 Found in 8ms (ActiveRecord: 4.8ms | Allocations: 2534)
+
+
+Started GET "/events" for 172.17.0.1 at 2024-02-29 19:54:58 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:6
+  Rendered events/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 599)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2158)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 2443)
+
+
+Started GET "/events/new" for 172.17.0.1 at 2024-02-29 19:54:59 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 1.1ms | Allocations: 1177)
+  Rendered events/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1264)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2641)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2930)
+
+
+Started POST "/events" for 172.17.0.1 at 2024-02-29 19:55:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "event"=>{"event_link"=>"https://www.youtube.com/watch?v=dQw4w9WgXcQ", "event_name"=>"TEST", "event_datetime"=>"2024-02-29T13:55"}, "commit"=>"Create Event"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/events_controller.rb:27:in `block in create'
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_link", "event_name", "event_datetime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["event_link", "https://www.youtube.com/watch?v=dQw4w9WgXcQ"], ["event_name", "TEST"], ["event_datetime", "2024-02-29 13:55:00"], ["created_at", "2024-02-29 19:55:13.074315"], ["updated_at", "2024-02-29 19:55:13.074315"]]
+  ↳ app/controllers/events_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/events_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/events/2
+Completed 302 Found in 8ms (ActiveRecord: 4.4ms | Allocations: 2376)
+
+
+Started GET "/events/2" for 172.17.0.1 at 2024-02-29 19:55:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:63:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_event.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered events/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 607)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1972)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 2728)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-29 22:17:10 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1841)
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 36648)
+Completed 200 OK in 71ms (Views: 61.7ms | ActiveRecord: 0.0ms | Allocations: 41146)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 22:17:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 1.7ms | Allocations: 289)
+  Rendered meetings/_meeting.html.erb (Duration: 0.4ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 23.8ms | Allocations: 6420)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 8276)
+Completed 200 OK in 40ms (Views: 28.2ms | ActiveRecord: 1.5ms | Allocations: 12021)
+
+
+Started GET "/events" for 172.17.0.1 at 2024-02-29 22:17:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:6
+  Rendered events/_event.html.erb (Duration: 1.7ms | Allocations: 333)
+  Rendered events/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 4885)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 6689)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.8ms | Allocations: 8035)
+
+
+Started GET "/meetings" for 172.17.0.1 at 2024-02-29 22:17:11 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:7
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered meetings/_meeting.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered meetings/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 895)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2424)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 2731)
+
+
+Started GET "/events" for 172.17.0.1 at 2024-02-29 22:17:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:6
+  Rendered events/_event.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered events/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 767)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2303)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 2593)
+
+
+Started GET "/" for 172.17.0.1 at 2024-02-29 22:17:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 647)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2024)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2295)
+
+
+Started GET "/meetings_members" for 172.17.0.1 at 2024-02-29 22:17:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MeetingsMembersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings_members/index.html.erb within layouts/application
+  [1m[36mMeetingsMember Load (1.2ms)[0m  [1m[34mSELECT "meetings_members".* FROM "meetings_members"[0m
+  ↳ app/views/meetings_members/index.html.erb:6
+  Rendered meetings_members/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 2284)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 4114)
+Completed 200 OK in 28ms (Views: 18.9ms | ActiveRecord: 1.2ms | Allocations: 6842)
+
+

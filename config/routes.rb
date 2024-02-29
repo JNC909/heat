@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :events
+  get 'meetings_members/index'
   resources :members
   root 'pages#home'
   devise_for :users, controllers: {
@@ -11,6 +13,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :meetings
+  resources :meetings_members
+
 
   
 end

@@ -68,13 +68,15 @@
           <%= link_to "Links", "#", class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Events", "#", class: "nav-link" %>
+          <%= link_to "Events", events_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
           <%= link_to "Meetings", meetings_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
           <%= link_to "Members", members_path, class: "nav-link" %>
+        <li class="nav-item">
+          <%= link_to "Meeting Attendance", meetings_members_path, class: "nav-link" %>
         </li>
       </ul>
     </div>
