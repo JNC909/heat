@@ -1,0 +1,10 @@
+
+
+<%= render @events %>
+
+<div>
+  <%= link_to "Edit this events", edit_events_path(@events) %> |
+  <%= link_to "Back to events", events_path %>
+
+  <%= button_to "Delete this events", @events, method: :delete %>
+</div>

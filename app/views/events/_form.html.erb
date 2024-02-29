@@ -1,0 +1,37 @@
+<%= form_with(model: events, local: true, class: "events-form") do |form| %>
+  <% if events.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+      <h4 class="alert-heading">Errors</h4>
+      <ul>
+        <% events.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :name, class: "form-label" %>
+    <br>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter events name" %>
+  </div>
+  <br>
+
+  <div class="form-group">
+    <%= form.label :date, class: "form-label" %>
+    <br>
+    <%= form.date_field :date, class: "form-control", placeholder: "Select events date" %>
+  </div>
+  <br>
+
+  <div class="form-group">
+    <%= form.label :location, class: "form-label" %>
+    <br>
+    <%= form.text_field :location, class: "form-control", placeholder: "Enter events location" %>
+  </div>
+
+  <div class="text-center mt-4">
+    <%= form.submit "Save Events", class: "btn btn-primary btn-lg mr-3" %>
+
+  </div>
+<% end %>
