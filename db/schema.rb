@@ -11,6 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2024_02_29_194801) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "events", force: :cascade do |t|
     t.string "event_link"
     t.string "event_name"
@@ -25,15 +28,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_29_194801) do
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "meetings_members", force: :cascade do |t|
-    t.integer "meeting_id", null: false
-    t.integer "member_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["meeting_id"], name: "index_meetings_members_on_meeting_id"
-    t.index ["member_id"], name: "index_meetings_members_on_member_id"
   end
 
   create_table "members", force: :cascade do |t|
@@ -60,6 +54,4 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_29_194801) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "meetings_members", "meetings"
-  add_foreign_key "meetings_members", "members"
 end
