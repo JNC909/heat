@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GoogleOauthDevise</title>
+  <center>
+    <title>HEAT</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <style>
+    <body style="background-color:#C0C0C0;">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+        <style>
         .flash__alert   { color: red; }
         .flash__notice  { color: blue; }
         .flash__success { color: green; }
@@ -20,5 +24,6 @@
       <% end -%>
     <% end %>
     <%= yield %>
+     </center>
   </body>
 </html>
