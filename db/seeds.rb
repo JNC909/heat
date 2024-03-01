@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Event.create([
+    {event_link: "LINK", event_name: "TEST", event_datetime: "2024-02-29 22:26:00 UTC"}
+])
