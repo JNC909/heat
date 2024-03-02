@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :meetings
   resources :meetings_members
+  resources :events_members
 
 
   
