@@ -82,3 +82,6 @@ gem "omniauth-rails_csrf_protection", "~> 1.0"
 
 # Simplecov
 gem 'simplecov', require: false
+
+# FactoryBot
+gem 'factory_bot_rails'

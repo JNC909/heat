@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe "events/edit", type: :view do
-  let(:event) {
-    Event.create!()
-  }
+  let(:event) do
+    Event.create!
+  end
 
   before(:each) do
     assign(:event, event)

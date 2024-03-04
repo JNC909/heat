@@ -5,7 +5,7 @@ RSpec.describe "meetings/_meeting", type: :view do
 
   before do
     assign(:meeting, meeting)
-    render partial: "meetings/meeting", locals: { meeting: meeting }
+    render partial: "meetings/meeting", locals: { meeting: }
   end
 
   it "renders the meeting details" do
