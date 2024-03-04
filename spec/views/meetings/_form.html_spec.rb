@@ -5,7 +5,7 @@ RSpec.describe "meetings/_form", type: :view do
 
   before do
     assign(:meeting, meeting)
-    render partial: "meetings/form", locals: { meeting: meeting }  # Assuming your partial is named "_form.html.erb"
+    render partial: "meetings/form", locals: { meeting: } # Assuming your partial is named "_form.html.erb"
   end
 
   it "renders the form with correct form fields" do
