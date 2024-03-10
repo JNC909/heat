@@ -1,12 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/kritikadhakal/Desktop/heat/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/kritikadhakal/Desktop/heat/app/controllers/events_controller.rb": {
         "lines": [
           1,
@@ -78,6 +72,12 @@
           1,
           0,
           null,
+          null
+        ]
+      },
+      "/Users/kritikadhakal/Desktop/heat/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           null
         ]
       },
@@ -193,6 +193,36 @@
           0,
           0,
           0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/kritikadhakal/Desktop/heat/app/controllers/SpeechesController.rb": {
+        "lines": [
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null
         ],
         "branches": {
         }
@@ -684,8 +714,41 @@
         ],
         "branches": {
         }
+      },
+      "/Users/kritikadhakal/Desktop/heat/app/services/text_to_speech_service.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1709520874
+    "timestamp": 1709533941
   }
 }
