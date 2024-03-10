@@ -1,6 +1,4 @@
-require "google/cloud/text_to_speech"
-
-ENV['GOOGLE_APPLICATION_CREDENTIALS_JSON'] = '{
+{
   "type": "service_account",
   "project_id": "text-to-speech-416204",
   "private_key_id": "0906868973edf9fe6c4f316ed208fa68d4c65c63",
@@ -12,8 +10,4 @@ ENV['GOOGLE_APPLICATION_CREDENTIALS_JSON'] = '{
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/text-to-speech%40text-to-speech-416204.iam.gserviceaccount.com",
   "universe_domain": "googleapis.com"
-}'
-
-Google::Cloud::TextToSpeech.configure do |config|
-  config.credentials = JSON.parse(ENV['GOOGLE_APPLICATION_CREDENTIALS_JSON'])
-end
+}
