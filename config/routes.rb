@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   resources :meetings_members
   resources :events_members
 
-
+get 'login', to: 'sessions#new'
+post 'login', to: 'sessions#create'
   
 end
