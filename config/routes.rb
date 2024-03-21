@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resources :meetings
   resources :meetings_members
   resources :speeches
+  resources :links
   post '/read_and_convert', to: 'speeches#read_and_convert'
 
 
