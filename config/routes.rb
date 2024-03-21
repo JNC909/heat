@@ -14,9 +14,9 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :meetings
   resources :meetings_members
-  resources :speeches
-  post '/read_and_convert', to: 'speeches#read_and_convert'
+  resources :events_members
 
-
+get 'login', to: 'sessions#new'
+post 'login', to: 'sessions#create'
   
 end

@@ -1,9 +1,20 @@
 class MeetingsController < ApplicationController
   before_action :set_meeting, only: %i[ show edit update destroy ]
+  before_action :require_login
   
   # GET /meetings or /meetings.json
   def index
     @meetings = Meeting.all
+  end
+
+  # def require_login
+  #   redirect_to login_path unless session[:authenticated]
+  # end
+  def require_login
+    unless session[:authenticated]
+      flash[:error] = "You have entered an incorrect password. Please try again."
+      redirect_to login_path
+    end
   end
   
   # GET /meetings/1 or /meetings/1.json
