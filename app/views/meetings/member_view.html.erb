@@ -59,11 +59,12 @@
       </tr>
     </thead>
     <tbody>
+    <% @meetings = @meetings.sort_by(&:date).reverse %>
       <% @meetings.each do |meeting| %>
         <tr>
           <td><%= meeting.name %></td>
           <td><%= meeting.date %></td>
-          <td><%= meeting.time %></td> <!-- Assuming time column is in HH:MM:SS format -->
+          <td><%= meeting.time.strftime("%I:%M %p") %></td> <!-- Assuming time column is in HH:MM:SS format -->
           <td><%= meeting.location %></td>
           <td><%= meeting.description %></td>
           <!-- Add more columns if needed -->
