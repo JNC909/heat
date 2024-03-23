@@ -92,7 +92,6 @@
 <%= button_to "Logout", destroy_user_session_path(redirect_to: root_path), data: { turbo: "false" }, method: :delete, class: "btn btn-success" %>
 <% else %>
   <%= link_to "Login", new_user_session_path, class: "btn btn-success" %>
-  <%= link_to "Create Account", new_user_registration_path, class: "btn btn-success" %>
 <% end %>
 
     </div>
