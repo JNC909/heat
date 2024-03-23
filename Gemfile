@@ -85,3 +85,6 @@ gem 'simplecov', require: false
 
 # Text-to-speech
 gem 'google-cloud-text_to_speech'
+
+# calender
+gem "simple_calendar", "~> 3.0"

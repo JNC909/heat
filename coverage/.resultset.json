@@ -5,6 +5,11 @@
         "lines": [
           1,
           1,
+          1,
+          null,
+          null,
+          1,
+          0,
           null,
           null,
           1,
@@ -91,10 +96,25 @@
         "lines": [
           1,
           1,
+          1,
           null,
           null,
           1,
           0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
           null,
           null,
           null,
@@ -165,15 +185,21 @@
         "lines": [
           1,
           null,
+          1,
+          1,
+          null,
           null,
           1,
           1,
           1,
           1,
           null,
+          null,
           1,
           1,
           1,
+          1,
+          null,
           null
         ]
       },
@@ -221,8 +247,156 @@
           0,
           0,
           0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/kritikadhakal/Desktop/heat/app/controllers/events_members_controller.rb": {
+        "lines": [
           0,
-          null
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/kritikadhakal/Desktop/heat/app/controllers/meetings_members_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0
         ],
         "branches": {
         }
@@ -231,7 +405,12 @@
         "lines": [
           0,
           0,
+          0,
           null,
+          null,
+          0,
+          0,
+          0,
           null,
           0,
           0,
@@ -305,6 +484,25 @@
       },
       "/Users/kritikadhakal/Desktop/heat/app/controllers/pages_controller.rb": {
         "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/kritikadhakal/Desktop/heat/app/controllers/sessions_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -633,6 +831,22 @@
         "branches": {
         }
       },
+      "/Users/kritikadhakal/Desktop/heat/app/helpers/events_members_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/kritikadhakal/Desktop/heat/app/helpers/meetings_member_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/kritikadhakal/Desktop/heat/app/helpers/members_helper.rb": {
         "lines": [
           0,
@@ -642,6 +856,14 @@
         }
       },
       "/Users/kritikadhakal/Desktop/heat/app/helpers/pages_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/kritikadhakal/Desktop/heat/app/helpers/sessions_helper.rb": {
         "lines": [
           0,
           0
@@ -674,6 +896,26 @@
       },
       "/Users/kritikadhakal/Desktop/heat/app/models/application_record.rb": {
         "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/kritikadhakal/Desktop/heat/app/models/events_member.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/kritikadhakal/Desktop/heat/app/models/meetings_member.rb": {
+        "lines": [
+          0,
           0,
           0,
           0
@@ -722,7 +964,6 @@
           0,
           0,
           0,
-          null,
           0,
           null,
           0,
@@ -742,13 +983,12 @@
           null,
           0,
           0,
-          0,
-          null
+          0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1709533941
+    "timestamp": 1711236659
   }
 }

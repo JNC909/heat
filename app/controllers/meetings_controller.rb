@@ -14,10 +14,11 @@ class MeetingsController < ApplicationController
   end
 
   def require_login
-    unless session[:authenticated]
+    return if session[:authenticated]
+
       flash[:error] = "You have entered an incorrect password. Please try again."
       redirect_to login_path
-    end
+    
   end
   
   # GET /meetings/1 or /meetings/1.json

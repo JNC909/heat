@@ -1,20 +1,39 @@
-<%= link_to 'Back', root_path, class: "button" %>
+<div class="container mt-5 text-center">
+  <p style="color: green;"><%= notice %></p>
+  <%= link_to 'Back', root_path %>
 
-<h1>Meetings</h1>
+  <h2>Meetings List</h2>
 
-<div id="meetings">
-  <% @meetings.each do |meeting| %>
-    <%= render meeting %>
-    <p>
-      <%= link_to "Show this meeting", meeting, class: "button" %>
-    </p>
-  <% end %>
-</div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th>Action</th> <!-- New column for viewing meeting -->
+      </tr>
+    </thead>
+    <tbody>
+      <% @meetings = @meetings.sort_by(&:date).reverse %>
+      <% @meetings.each do |meeting| %>
+        <tr>
+          <td><%= meeting.name %></td>
+          <td><%= meeting.date %></td>
+          <td><%= meeting.time.strftime("%I:%M %p") if meeting.time.present? %></td>
+          <td><%= meeting.location %></td>
+          <td><%= meeting.description %></td>
+          <td><%= link_to "View", meeting, class: "btn btn-primary" %></td> <!-- Link to view meeting -->
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to "New meeting", new_meeting_path, class: "button" %>
-<br>
-<br>
-<%= link_to member_view_meetings_path, class: "button button-member-view" do %>
+  <%= link_to "New meeting", new_meeting_path, class: "btn btn-primary" %>
+  <br>
+  <br>
+  <%= link_to member_view_meetings_path, class: "button button-member-view" do %>
   Member View
 <% end %>
 
@@ -41,3 +60,4 @@
     background-color: maroon; /* Yellow color */
   }
 </style>
+</div>

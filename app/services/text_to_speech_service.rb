@@ -3,7 +3,6 @@
 class TextToSpeechService
   def self.synthesize(text)
     client = Google::Cloud::TextToSpeech.text_to_speech
-
     input_text = { text: }
 
     voice = {
