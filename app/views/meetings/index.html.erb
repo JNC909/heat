@@ -1,5 +1,4 @@
-
-<%= link_to 'Back', root_path %>
+<%= link_to 'Back', root_path, class: "button" %>
 
 <h1>Meetings</h1>
 
@@ -7,9 +6,38 @@
   <% @meetings.each do |meeting| %>
     <%= render meeting %>
     <p>
-      <%= link_to "Show this meeting", meeting %>
+      <%= link_to "Show this meeting", meeting, class: "button" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New meeting", new_meeting_path %>
+<%= link_to "New meeting", new_meeting_path, class: "button" %>
+<br>
+<br>
+<%= link_to member_view_meetings_path, class: "button button-member-view" do %>
+  Member View
+<% end %>
+
+<style>
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add some space between buttons */
+  }
+
+  /* Hover effect */
+  .button:hover {
+    opacity: 0.8;
+  }
+  
+
+  .button-member-view {
+    background-color: maroon; /* Yellow color */
+  }
+</style>

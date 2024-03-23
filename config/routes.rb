@@ -1,3 +1,4 @@
+# config/routes.rb
 Rails.application.routes.draw do
   resources :events
   get 'meetings_members/index'
@@ -8,15 +9,14 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-  resources :meetings
+  resources :meetings do
+    get 'member_view', on: :collection
+  end
+
   resources :meetings_members
   resources :events_members
 
-get 'login', to: 'sessions#new'
-post 'login', to: 'sessions#create'
-  
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
 end

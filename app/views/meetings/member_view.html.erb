@@ -1,0 +1,73 @@
+<!-- app/views/meetings/member_view.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Member View</title>
+  <style>
+    /* Style the header */
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Style the table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table th, table td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    /* Style table rows */
+    table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Hover effect on table rows */
+    table tbody tr:hover {
+      background-color: #f2f2f2;
+    }
+
+    /* Align text in the table cells */
+    table td {
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <h1>Member View</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Location</th>
+        <!-- Add more columns if needed -->
+      </tr>
+    </thead>
+    <tbody>
+      <% @meetings.each do |meeting| %>
+        <tr>
+          <td><%= meeting.name %></td>
+          <td><%= meeting.date %></td>
+          <td><%= meeting.time %></td> <!-- Assuming time column is in HH:MM:SS format -->
+          <td><%= meeting.location %></td>
+          <!-- Add more columns if needed -->
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</body>
+</html>

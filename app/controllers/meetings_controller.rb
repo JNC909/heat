@@ -7,9 +7,12 @@ class MeetingsController < ApplicationController
     @meetings = Meeting.all
   end
 
-  # def require_login
-  #   redirect_to login_path unless session[:authenticated]
-  # end
+  # GET /meetings/member_view or /meetings/member_view.json
+  def member_view
+    @meetings = Meeting.all
+    render :member_view # Render member_view.html.erb
+  end
+
   def require_login
     unless session[:authenticated]
       flash[:error] = "You have entered an incorrect password. Please try again."
@@ -76,6 +79,6 @@ class MeetingsController < ApplicationController
   
     # Only allow a list of trusted parameters through.
     def meeting_params
-      params.require(:meeting).permit(:name, :date, :location)
+      params.require(:meeting).permit(:name, :date, :time, :location, :description)
     end
 end
