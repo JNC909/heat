@@ -1,17 +1,20 @@
-# frozen_string_literal: true
-
 class Users::SessionsController < Devise::SessionsController
-  # before_action :configure_sign_in_params, only: [:create]
-
   # GET /resource/sign_in
   # def new
   #   super
   # end
 
   # POST /resource/sign_in
-  # def create
-  #   super
-  # end
+  def create
+    # Check if the email matches the required format
+    if params[:user][:email] =~ Devise.email_regexp
+      super
+    else
+      # Redirect or display an error message for invalid email format
+      flash[:alert] = "Only @tamu.edu email addresses are allowed to sign in."
+      redirect_to new_user_session_path
+    end
+  end
 
   # DELETE /resource/sign_out
   # def destroy
@@ -25,6 +28,7 @@ class Users::SessionsController < Devise::SessionsController
   def after_sign_in_path_for(resource_or_scope)
     stored_location_for(resource_or_scope) || root_path
   end
+
   # protected
 
   # If you have extra params to permit, append them to the sanitizer.
