@@ -1,10 +1,73 @@
-<p style="color: green"><%= notice %></p>
+<p class="notice"><%= notice %></p>
 
-<%= render @member %>
+<div class="member-details">
+  <%= render @member %>
+</div>
 
-<div>
+<div class="action-links">
   <%= link_to "Edit this member", edit_member_path(@member) %> |
   <%= link_to "Back to members", members_path %>
-
-  <%= button_to "Destroy this member", @member, method: :delete %>
+  <%= button_to "Destroy this member", @member, method: :delete, data: { confirm: "Are you sure?" }, form_class: "action-link", class: "danger-link" %>
 </div>
+
+<style>
+  body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .notice {
+    color: #28a745;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .member-details {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .action-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .action-links a, .action-links form {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: #007bff;
+    background-color: transparent;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .action-links a:hover, .action-links form:hover {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+  }
+
+  .action-links form button {
+    border: none;
+    background: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .action-links form {
+    display: inline;
+  }
+</style>
