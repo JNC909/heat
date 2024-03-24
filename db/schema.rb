@@ -56,6 +56,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_23_193217) do
     t.boolean "executive_status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_members_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -78,4 +80,5 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_23_193217) do
   add_foreign_key "events_members", "members"
   add_foreign_key "meetings_members", "meetings"
   add_foreign_key "meetings_members", "members"
+  add_foreign_key "members", "users"
 end
