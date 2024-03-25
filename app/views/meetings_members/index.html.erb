@@ -1,15 +1,30 @@
 <%= link_to 'Back', root_path %>
 
-<h1>Member Meetings</h1>
+<h1>Meetings Attendance</h1>
 
 <div id="meetings_members">
-<% @meetings_members.each do |meeting_member| %>
+  <% @meetings_members.each do |meeting_member| %>
     <div>
-      <p>Meeting: <%= link_to meetings_member.meeting.name, meetings_member.meeting %></p>
-      <p>Member: <%= link_to meetings_member.member.name, meetings_member.member %></p>
+      <p>Meeting: <%= link_to meeting_member.meeting.name, meeting_member.meeting %></p>
+      <p>Member: <%= link_to meeting_member.member.member_name, meeting_member.member %></p>
     </div>
   <% end %>
-  
+</div>
 
 <%= link_to "Back to Members", members_path %>
 <%= link_to "Back to Meetings", meetings_path %>
+
+
+<%= form_with(model: MeetingsMember.new, url: meetings_members_path, method: :post) do |form| %>
+  <div class="form-group">
+    <%= form.label :meeting_id, "Meeting" %>
+    <%= form.select :meeting_id, Meeting.all.map { |m| [m.name, m.id] }, prompt: "Select Meeting" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :member_id, "Member" %>
+    <%= form.collection_select :member_id, Member.all, :id, :member_name, prompt: "Select Member" %>
+  </div>
+  <%= form.submit "Add Member to Meeting", class: "btn btn-primary" %>
+<% end %>
+
+

@@ -13,6 +13,8 @@ class MeetingsMembersController < ApplicationController
     # GET /meetings_members/new
     def new
       @meeting_member = MeetingsMember.new
+      #below line is new
+      @meeting_id = params[:meeting_id]
     end
   
     # GET /meetings_members/1/edit
@@ -24,11 +26,17 @@ class MeetingsMembersController < ApplicationController
       @meeting_member = MeetingsMember.new(meeting_member_params)
   
       respond_to do |format|
+        # if @meeting_member.save
+        #   format.html { redirect_to @meeting_member, notice: 'Meeting member was successfully created.' }
+        #   format.json { render :show, status: :created, location: @meeting_member }
+        # else
+        #   format.html { render :new, status: :unprocessable_entity }
+        #   format.json { render json: @meeting_member.errors, status: :unprocessable_entity }
         if @meeting_member.save
-          format.html { redirect_to @meeting_member, notice: 'Meeting member was successfully created.' }
+          format.html { redirect_to meetings_members_path, notice: 'Member added to meeting successfully!' }
           format.json { render :show, status: :created, location: @meeting_member }
         else
-          format.html { render :new, status: :unprocessable_entity }
+          format.html { redirect_to meetings_members_path, alert: 'Failed to add member to meeting! ' + @meeting_member.errors.full_messages.join(', ') }
           format.json { render json: @meeting_member.errors, status: :unprocessable_entity }
         end
       end
