@@ -3,6 +3,7 @@ class EventsMembersController < ApplicationController
   
     # GET /events_members
     def index
+      @events = Event.all
       @events_members = EventsMember.includes(:event, :member).all
     end
   
@@ -22,13 +23,22 @@ class EventsMembersController < ApplicationController
     # POST /events_members
     def create
       @event_member = EventsMember.new(event_member_params)
-  
+
+      # Check if the member is already in the event
+      if EventsMember.exists?(event_id: @event_member.event_id, member_id: @event_member.member_id)
+        redirect_to events_members_path, alert: 'Member is already in the event!'
+        return
+      end
+        
       respond_to do |format|
         if @event_member.save
-          format.html { redirect_to @event_member, notice: 'Event member was successfully created.' }
+          @member = Member.find(@event_member.member_id)
+          @member.increment!(:member_points)
+    
+          format.html { redirect_to events_members_path, notice: 'Member added to event successfully!' }
           format.json { render :show, status: :created, location: @event_member }
         else
-          format.html { render :new, status: :unprocessable_entity }
+          format.html { redirect_to events_members_path, alert: 'Failed to add member to event! ' + @event_member.errors.full_messages.join(', ') }
           format.json { render json: @event_member.errors, status: :unprocessable_entity }
         end
       end

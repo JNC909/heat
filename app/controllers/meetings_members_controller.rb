@@ -3,7 +3,9 @@ class MeetingsMembersController < ApplicationController
   
     # GET /meetings_members
     def index
-      @meetings_members = MeetingsMember.includes(:meeting, :member).all
+      #@meetings_members = MeetingsMember.includes(:meeting, :member).all
+      @meetings_members = MeetingsMember.includes(:meeting, :member).order('meetings.date DESC')
+      @meetings = Meeting.all
     end
   
     # GET /meetings_members/1
@@ -24,15 +26,19 @@ class MeetingsMembersController < ApplicationController
     # POST /meetings_members
     def create
       @meeting_member = MeetingsMember.new(meeting_member_params)
+
+      # Check if the member is already in the meeting
+      if MeetingsMember.exists?(meeting_id: @meeting_member.meeting_id, member_id: @meeting_member.member_id)
+        redirect_to meetings_members_path, alert: 'Member is already in the meeting!'
+        return
+      end
   
       respond_to do |format|
-        # if @meeting_member.save
-        #   format.html { redirect_to @meeting_member, notice: 'Meeting member was successfully created.' }
-        #   format.json { render :show, status: :created, location: @meeting_member }
-        # else
-        #   format.html { render :new, status: :unprocessable_entity }
-        #   format.json { render json: @meeting_member.errors, status: :unprocessable_entity }
         if @meeting_member.save
+
+          @member = Member.find(@meeting_member.member_id)
+          @member.increment!(:member_points)
+
           format.html { redirect_to meetings_members_path, notice: 'Member added to meeting successfully!' }
           format.json { render :show, status: :created, location: @meeting_member }
         else

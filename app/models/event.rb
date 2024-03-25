@@ -1,2 +1,5 @@
 class Event < ApplicationRecord
-end
+    has_many :events_members
+    has_many :members, through: :events_members
+  end
+  

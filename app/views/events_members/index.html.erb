@@ -1,15 +1,87 @@
 <%= link_to 'Back', root_path %>
 
-<h1>Member Events</h1>
+<h1>Event Attendance</h1>
 
-<div id="events_members">
-<% @events_members.each do |event_member| %>
-    <div>
-      <p>Event: <%= link_to events_member.event.name, events_member.event %></p>
-      <p>Member: <%= link_to events_member.member.name, events_member.member %></p>
-    </div>
-  <% end %>
-  
+<style>
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  th, td {
+    padding: 8px;
+    border: 1px solid black;
+  }
+  th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 10px;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Event</th>
+      <th>Members</th>
+      <th>Add Member</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @events.order(event_datetime: :desc).each do |event| %>
+      <tr>
+        <td><%= event.event_datetime.strftime("%B %d, %Y") %></td>
+        <td><%= event.event_name %></td>
+        <td>
+          <% event_members = event.events_members %>
+          <% if event_members.any? %>
+            <ul>
+              <% event_members.each do |event_member| %>
+                <li><%= event_member.member.member_name %></li>
+              <% end %>
+            </ul>
+          <% else %>
+            No attendees yet
+          <% end %>
+        </td>
+        <td>
+          <%= form_with(model: EventsMember.new, url: events_members_path, method: :post) do |form| %>
+            <%= form.hidden_field :event_id, value: event.id %>
+            <div class="form-group">
+              <%= form.label :member_id, "Member" %>
+              <%= form.collection_select :member_id, Member.all, :id, :member_name, prompt: "Select Member" %>
+            </div>
+            <%= form.submit "Add Member", class: "btn btn-primary" %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
 <%= link_to "Back to Members", members_path %>
-<%= link_to "Back to events", events_path %>
+<%= link_to "Back to Events", events_path %>
+

@@ -17,7 +17,8 @@ Rails.application.routes.draw do
     get 'attendance', on: :collection
   end
   resources :meetings_members
-  resources :events_members
+  #resources :events_members
+  resources :events_members, only: [:index, :create]
 
 get 'login', to: 'sessions#new'
 post 'login', to: 'sessions#create'
