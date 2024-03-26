@@ -1,3 +1,5 @@
+require 'axlsx'
+
 class MeetingsMembersController < ApplicationController
     before_action :set_meeting_member, only: %i[show edit update destroy]
   
@@ -6,6 +8,22 @@ class MeetingsMembersController < ApplicationController
       #@meetings_members = MeetingsMember.includes(:meeting, :member).all
       @meetings_members = MeetingsMember.includes(:meeting, :member).order('meetings.date DESC')
       @meetings = Meeting.all
+    end
+
+    #for exporting table data
+    def export
+      @meetings = Meeting.order(date: :desc)
+      package = Axlsx::Package.new
+      wb = package.workbook
+      wb.add_worksheet(name: 'Meetings Attendance') do |sheet|
+        sheet.add_row ['Date', 'Meeting', 'Members']
+        @meetings.each do |meeting|
+          members_list = meeting.members.any? ? meeting.members.map(&:member_name).join(', ') : 'No attendees yet'
+          sheet.add_row [meeting.date.strftime('%B %d, %Y'), meeting.name, members_list]
+        end
+      end
+  
+      send_data package.to_stream.read, filename: 'meetings_attendance.xlsx'
     end
   
     # GET /meetings_members/1
