@@ -1,3 +1,5 @@
+require 'axlsx'
+
 class EventsMembersController < ApplicationController
     before_action :set_event_member, only: %i[show edit update destroy]
   
@@ -5,6 +7,23 @@ class EventsMembersController < ApplicationController
     def index
       @events = Event.all
       @events_members = EventsMember.includes(:event, :member).all
+    end
+
+    #for exporting table data
+    def export
+      @events = Event.order(event_datetime: :desc)
+      package = Axlsx::Package.new
+      wb = package.workbook
+      wb.add_worksheet(name: 'Event Attendance') do |sheet|
+        sheet.add_row ['Date', 'Event', 'Members']
+        @events.each do |event|
+          event_members = event.events_members
+          members_list = event_members.any? ? event_members.map { |em| em.member.member_name }.join(', ') : 'No attendees yet'
+          sheet.add_row [event.event_datetime.strftime('%B %d, %Y'), event.event_name, members_list]
+        end
+      end
+  
+      send_data package.to_stream.read, filename: 'event_attendance.xlsx', type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
     end
   
     # GET /events_members/1

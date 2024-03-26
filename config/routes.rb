@@ -26,5 +26,7 @@ post 'login', to: 'sessions#create'
 #for exporting table data
 get 'meetings_export', to: 'meetings_members#export', as: 'meetings_export'
 
+get 'events_export', to: 'events_members#export', as: 'events_export'
+
   
 end

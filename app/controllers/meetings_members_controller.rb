@@ -23,7 +23,7 @@ class MeetingsMembersController < ApplicationController
         end
       end
   
-      send_data package.to_stream.read, filename: 'meetings_attendance.xlsx'
+      send_data package.to_stream.read, filename: 'meetings_attendance.xlsx', type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
     end
   
     # GET /meetings_members/1
