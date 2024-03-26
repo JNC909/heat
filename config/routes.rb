@@ -19,6 +19,9 @@ Rails.application.routes.draw do
   resources :meetings_members
   #resources :events_members
   resources :events_members, only: [:index, :create]
+  resources :speeches
+  resources :links
+  post '/read_and_convert', to: 'speeches#read_and_convert'
 
 get 'login', to: 'sessions#new'
 post 'login', to: 'sessions#create'
