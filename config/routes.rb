@@ -13,8 +13,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   # resources :meetings
+  # resources :meetings do
+  #   get 'attendance', on: :collection
+  # end
   resources :meetings do
-    get 'attendance', on: :collection
+    get 'member_view', on: :collection
   end
   resources :meetings_members
   #resources :events_members

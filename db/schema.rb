@@ -37,6 +37,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_02_004058) do
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.time "time"
+    t.text "description"
   end
 
   create_table "meetings_members", force: :cascade do |t|
