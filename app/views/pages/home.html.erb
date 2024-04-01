@@ -106,7 +106,6 @@
         <%= button_to "Logout", destroy_user_session_path(redirect_to: root_path), data: { turbo: "false" }, method: :delete, class: "btn btn-success" %>
         <% else %>
         <%= link_to "Login", new_user_session_path, class: "btn btn-success" %>
-        <%= link_to "Create Account", new_user_registration_path, class: "btn btn-success" %>
         <% end %>
         <!-- Add the new button for reading the content -->
         <div id="textToSpeechSection">
@@ -139,10 +138,6 @@
     <p><strong>Admits Members:</strong> First Quarter of Each Semester</p>
     <p><strong>Meeting Locations:</strong> TBA</p>
     
-    <h3>Public Contact Information</h3>
-    <p><strong>Name:</strong> Abigail Jensen</p>
-    <p><strong>Email:</strong> <a href="mailto:ajensen2020@tamu.edu">ajensen2020@tamu.edu</a></p>
-    <p><strong>Phone:</strong> 8329044371</p>
     
     <h3>Group Contact Information</h3>
     <p><strong>Website:</strong> <a href="http://heatestablishment.tamu.edu">heatestablishment.tamu.edu</a>, <a href="https://www.instagram.com/heattamu/?hl=en">Instagram</a></p>
