@@ -1,33 +1,55 @@
 {
   "RSpec": {
     "coverage": {
-      "/heat_project/heat_fifth/heat/app/services/text_to_speech_service.rb": {
+      "/heat_project/heat_fifth/heat/app/models/event.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/heat_project/heat_fifth/heat/app/models/events_member.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/heat_project/heat_fifth/heat/app/models/meeting.rb": {
+        "lines": [
+          1,
           null,
           null,
           1,
           1,
-          2,
+          1,
+          1,
           null,
-          2,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/heat_project/heat_fifth/heat/app/models/meetings_member.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/heat_project/heat_fifth/heat/app/models/member.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           null,
-          null,
-          2,
-          null,
-          null,
-          null,
-          null,
-          2,
-          null,
-          null,
-          2,
-          null,
-          null,
-          null,
-          null,
-          null,
-          2,
-          null,
+          1,
+          1,
           null
         ]
       },
@@ -988,68 +1010,6 @@
         "branches": {
         }
       },
-      "/heat_project/heat_fifth/heat/app/models/event.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/heat_project/heat_fifth/heat/app/models/events_member.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/heat_project/heat_fifth/heat/app/models/meeting.rb": {
-        "lines": [
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/heat_project/heat_fifth/heat/app/models/meetings_member.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/heat_project/heat_fifth/heat/app/models/member.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/heat_project/heat_fifth/heat/app/models/user.rb": {
         "lines": [
           0,
@@ -1073,8 +1033,40 @@
         ],
         "branches": {
         }
+      },
+      "/heat_project/heat_fifth/heat/app/services/text_to_speech_service.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1712022748
+    "timestamp": 1712025356
   }
 }
