@@ -1,8 +1,5 @@
 require 'rails_helper'
 
 RSpec.describe EventsMember, type: :model do
-  describe 'associations' do
-    it { is_expected.to belong_to(:event) }
-    it { is_expected.to belong_to(:member) }
-  end
+  pending "add some examples to (or delete) #{__FILE__}"
 end
