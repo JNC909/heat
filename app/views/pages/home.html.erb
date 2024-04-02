@@ -45,6 +45,12 @@
       color: #800000 !important;
     }
 
+    .main-image {
+      max-width: 60%; 
+      height: auto;
+    }
+
+
     h1, h2 {
       color: #800000;
     }
@@ -118,7 +124,12 @@
 
   <audio id="audioPlayer" controls></audio>
 
-   <!-- About Section-->
+  <div class="container text-center">
+    <%= image_tag("HeatMainPicture.png", class: "img-fluid main-image") %>
+  </div>
+ 
+
+  <!-- About Section-->
   <section id="about-organization" style="background-color: #f7f7f7; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); max-width: 800px; margin: 20px auto;">
   <h2 style="text-align: center; color: #333;">About This Organization</h2>
   <div style="background-color: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
