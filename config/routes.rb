@@ -31,5 +31,7 @@ get 'meetings_export', to: 'meetings_members#export', as: 'meetings_export'
 
 get 'events_export', to: 'events_members#export', as: 'events_export'
 
+post 'speeches/create', to: 'speeches#create', as: 'speeches_create'
+post 'speeches/read_and_convert', to: 'speeches#read_and_convert', as: 'speeches_read_and_convert'
   
 end
