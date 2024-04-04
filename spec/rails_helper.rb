@@ -1,5 +1,6 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
+require 'devise'
 
 # Needed for the rspec files
 require 'factory_bot_rails'
@@ -69,4 +70,14 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
+
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include Devise::Test::IntegrationHelpers, type: :request
+end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
 end
