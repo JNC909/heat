@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     get 'member_view', on: :collection
   end
   resources :meetings_members
+  resources :links
   #resources :events_members
   resources :events_members, only: [:index, :create]
 
