@@ -7,7 +7,7 @@ RSpec.describe "events/show", type: :view do
 
   it "renders event actions" do
     render
-    expect(rendered).to match /Edit this event/
-    expect(rendered).to match /Back to events/
+    expect(rendered).to match(/Edit this event/)
+    expect(rendered).to match(/Back to events/)
   end
 end

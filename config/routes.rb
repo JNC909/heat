@@ -21,18 +21,18 @@ Rails.application.routes.draw do
   end
   resources :meetings_members
   resources :links
-  #resources :events_members
+  # resources :events_members
   resources :events_members, only: [:index, :create]
 
-get 'login', to: 'sessions#new'
-post 'login', to: 'sessions#create'
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
 
-#for exporting table data
-get 'meetings_export', to: 'meetings_members#export', as: 'meetings_export'
+  # for exporting table data
+  get 'meetings_export', to: 'meetings_members#export', as: 'meetings_export'
 
-get 'events_export', to: 'events_members#export', as: 'events_export'
+  get 'events_export', to: 'events_members#export', as: 'events_export'
 
-resources :speeches
-post '/read_and_convert', to: 'speeches#read_and_convert' 
+  resources :speeches
+  post '/read_and_convert', to: 'speeches#read_and_convert' 
   
 end

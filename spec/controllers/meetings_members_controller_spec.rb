@@ -15,9 +15,9 @@ RSpec.describe MeetingsMembersController, type: :controller do
 
   describe "POST #create" do
     it "creates a new MeetingsMember association" do
-      expect {
+      expect do
         post :create, params: { meetings_member: valid_attributes }
-      }.to change(MeetingsMember, :count).by(1)
+      end.to change(MeetingsMember, :count).by(1)
     end
   end
 end

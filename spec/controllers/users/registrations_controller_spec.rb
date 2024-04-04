@@ -11,7 +11,7 @@ RSpec.describe Users::RegistrationsController, type: :controller do
 
     context 'when the user is from google_oauth2' do
       it 'updates the user without requiring the current password' do
-        controller.update_resource(user, {email: 'newemail@example.com', password: 'newpassword'})
+        controller.update_resource(user, { email: 'newemail@example.com', password: 'newpassword' })
         expect(user.email).to eq('newemail@example.com')
       end
     end

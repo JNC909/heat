@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe MeetingsController, type: :controller do
-  let(:valid_attributes) {
+  let(:valid_attributes) do
     { name: 'Team Meeting', date: Date.today, location: 'Conference Room' }
-  }
+  end
 
-  let(:new_attributes) {
+  let(:new_attributes) do
     { name: 'Updated Meeting', date: Date.tomorrow, location: 'New Location' }
-  }
+  end
 
   before do
     allow(controller).to receive(:require_login).and_return(true)
@@ -30,9 +30,9 @@ RSpec.describe MeetingsController, type: :controller do
 
   describe "POST #create" do
     it "creates a new Meeting" do
-      expect {
+      expect do
         post :create, params: { meeting: valid_attributes }
-      }.to change(Meeting, :count).by(1)
+      end.to change(Meeting, :count).by(1)
     end
   end
 
@@ -47,9 +47,9 @@ RSpec.describe MeetingsController, type: :controller do
   describe "DELETE #destroy" do
     it "destroys the requested meeting" do
       meeting = Meeting.create! valid_attributes
-      expect {
+      expect do
         delete :destroy, params: { id: meeting.to_param }
-      }.to change(Meeting, :count).by(-1)
+      end.to change(Meeting, :count).by(-1)
     end
   end
 end

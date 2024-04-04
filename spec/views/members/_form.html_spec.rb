@@ -6,7 +6,7 @@ RSpec.describe 'members/_form', type: :view do
 
     before do
       assign(:member, member)
-      render partial: 'members/form', locals: { member: member }
+      render partial: 'members/form', locals: { member: }
     end
 
     it 'renders the member form' do

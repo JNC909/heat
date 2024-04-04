@@ -7,9 +7,9 @@ RSpec.describe ApplicationJob, type: :job do
 
   describe 'perform_later' do
     it 'enqueues a job' do
-      expect {
+      expect do
         ApplicationJob.perform_later
-      }.to have_enqueued_job(ApplicationJob)
+      end.to have_enqueued_job(ApplicationJob)
     end
   end
 end

@@ -5,17 +5,17 @@ RSpec.describe MembersController, type: :controller do
     session[:authenticated] = true
   end
 
-  let(:valid_attributes) {
+  let(:valid_attributes) do
     { member_name: "John Doe", member_points: 10, executive_status: false }
-  }
+  end
 
-  let(:invalid_attributes) {
+  let(:invalid_attributes) do
     { member_name: "", member_points: nil, executive_status: false }
-  }
+  end
 
   describe "GET #index" do
     it "returns a success response" do
-      member = Member.create! valid_attributes
+      Member.create! valid_attributes
       get :index
       expect(response).to be_successful
     end
@@ -32,9 +32,9 @@ RSpec.describe MembersController, type: :controller do
   describe "POST #create" do
     context "with valid params" do
       it "creates a new Member" do
-        expect {
+        expect do
           post :create, params: { member: valid_attributes }
-        }.to change(Member, :count).by(1)
+        end.to change(Member, :count).by(1)
       end
 
       it "redirects to the created member" do
@@ -44,10 +44,10 @@ RSpec.describe MembersController, type: :controller do
     end
 
     context "with invalid params" do
-        it "redirects due to unmet preconditions (needs investigation)" do
-          post :create, params: { member: invalid_attributes }
-          expect(response).to have_http_status(:found) 
-        end
-      end           
+      it "redirects due to unmet preconditions (needs investigation)" do
+        post :create, params: { member: invalid_attributes }
+        expect(response).to have_http_status(:found)
+      end
+    end
   end
 end

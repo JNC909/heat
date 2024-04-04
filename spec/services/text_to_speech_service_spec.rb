@@ -15,7 +15,7 @@ RSpec.describe TextToSpeechService do
       described_class.synthesize(text)
 
       expect(mock_client).to have_received(:synthesize_speech).with(
-        input: { text: text },
+        input: { text: },
         voice: { language_code: "en-US", ssml_gender: "NEUTRAL" },
         audio_config: { audio_encoding: "MP3" }
       )

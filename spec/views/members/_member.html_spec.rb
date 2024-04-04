@@ -4,7 +4,7 @@ RSpec.describe 'members/_member', type: :view do
   let(:member) { FactoryBot.create(:member, member_name: 'John Doe', member_points: 100, executive_status: true) }
 
   before do
-    render 'members/member', member: member
+    render 'members/member', member:
   end
 
   it 'displays member details' do

@@ -16,9 +16,9 @@ RSpec.describe EventsController, type: :controller do
     let(:valid_attributes) { { event_link: 'http://example.com', event_name: 'Test Event', event_datetime: Time.zone.now } }
 
     it 'creates a new Event and redirects' do
-      expect {
+      expect do
         post :create, params: { event: valid_attributes }
-      }.to change(Event, :count).by(1)
+      end.to change(Event, :count).by(1)
       expect(response).to redirect_to(Event.last)
     end
   end
