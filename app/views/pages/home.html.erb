@@ -45,12 +45,6 @@
       color: #800000 !important;
     }
 
-    .main-image {
-      max-width: 60%; 
-      height: auto;
-    }
-
-
     h1, h2 {
       color: #800000;
     }
@@ -112,6 +106,7 @@
         <%= button_to "Logout", destroy_user_session_path(redirect_to: root_path), data: { turbo: "false" }, method: :delete, class: "btn btn-success" %>
         <% else %>
         <%= link_to "Login", new_user_session_path, class: "btn btn-success" %>
+        <%= link_to "Create Account", new_user_registration_path, class: "btn btn-success" %>
         <% end %>
         <!-- Add the new button for reading the content -->
         <div id="textToSpeechSection">
@@ -124,12 +119,7 @@
 
   <audio id="audioPlayer" controls></audio>
 
-  <div class="container text-center">
-    <%= image_tag("HeatMainPicture.png", class: "img-fluid main-image") %>
-  </div>
- 
-
-  <!-- About Section-->
+   <!-- About Section-->
   <section id="about-organization" style="background-color: #f7f7f7; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); max-width: 800px; margin: 20px auto;">
   <h2 style="text-align: center; color: #333;">About This Organization</h2>
   <div style="background-color: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
@@ -148,7 +138,7 @@
     <p><strong>Membership Dues:</strong> $20/semester for new members; $15/semester for returning members</p>
     <p><strong>Admits Members:</strong> First Quarter of Each Semester</p>
     <p><strong>Meeting Locations:</strong> TBA</p>
-    
+  
     
     <h3>Group Contact Information</h3>
     <p><strong>Website:</strong> <a href="http://heatestablishment.tamu.edu">heatestablishment.tamu.edu</a>, <a href="https://www.instagram.com/heattamu/?hl=en">Instagram</a></p>
