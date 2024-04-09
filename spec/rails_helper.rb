@@ -1,4 +1,11 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
+require 'simplecov'
+SimpleCov.start 'rails' do
+  add_filter '/app/controllers/application_controller.rb'
+  add_filter '/app/controllers/meetings_members_controller.rb'
+  add_filter '/app/controllers/events_members_controller.rb'
+  add_filter '/app/controllers/links_controller.rb'
+end
 require 'spec_helper'
 require 'devise'
 
