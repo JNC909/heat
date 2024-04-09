@@ -96,3 +96,6 @@ gem 'axlsx_rails'
 
 #installing brakeman
 gem "brakeman"
+
+#installing rubocop
+gem "rubocop"
