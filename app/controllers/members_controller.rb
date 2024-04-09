@@ -1,9 +1,14 @@
 class MembersController < ApplicationController
   before_action :set_member, only: %i[ show edit update destroy ]
+  before_action :require_login
 
   # GET /members or /members.json
   def index
     @members = Member.all
+  end
+
+  def require_login
+    redirect_to login_path unless session[:authenticated]
   end
 
   # GET /members/1 or /members/1.json

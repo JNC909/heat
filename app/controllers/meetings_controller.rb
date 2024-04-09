@@ -1,9 +1,24 @@
 class MeetingsController < ApplicationController
   before_action :set_meeting, only: %i[ show edit update destroy ]
+  before_action :require_login
   
   # GET /meetings or /meetings.json
   def index
     @meetings = Meeting.all
+  end
+
+  # GET /meetings/member_view or /meetings/member_view.json
+  def member_view
+    @meetings = Meeting.all
+    render :member_view # Render member_view.html.erb
+  end
+  
+  def require_login
+    return if session[:authenticated]
+
+      flash[:error] = "You have entered an incorrect password. Please try again."
+      redirect_to login_path
+    
   end
   
   # GET /meetings/1 or /meetings/1.json
@@ -55,6 +70,10 @@ class MeetingsController < ApplicationController
       format.html { redirect_to meetings_url, notice: "Meeting was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  def attendance
+    @meetings = Meeting.all
   end
   
   private

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_02_29_194801) do
+ActiveRecord::Schema[7.0].define(version: 2024_04_04_043804) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,6 +18,24 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_29_194801) do
     t.string "event_link"
     t.string "event_name"
     t.datetime "event_datetime"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.datetime "event_end"
+    t.integer "event_points"
+  end
+
+  create_table "events_members", force: :cascade do |t|
+    t.bigint "event_id", null: false
+    t.bigint "member_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["event_id"], name: "index_events_members_on_event_id"
+    t.index ["member_id"], name: "index_events_members_on_member_id"
+  end
+
+  create_table "links", force: :cascade do |t|
+    t.string "title"
+    t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,6 +46,17 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_29_194801) do
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.time "time"
+    t.text "description"
+  end
+
+  create_table "meetings_members", force: :cascade do |t|
+    t.bigint "meeting_id", null: false
+    t.bigint "member_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["meeting_id"], name: "index_meetings_members_on_meeting_id"
+    t.index ["member_id"], name: "index_meetings_members_on_member_id"
   end
 
   create_table "members", force: :cascade do |t|
@@ -54,4 +83,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_29_194801) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "events_members", "events"
+  add_foreign_key "events_members", "members"
+  add_foreign_key "meetings_members", "meetings"
+  add_foreign_key "meetings_members", "members"
 end
