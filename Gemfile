@@ -93,3 +93,6 @@ gem 'google-cloud-text_to_speech'
 
 # Exporting table data
 gem 'axlsx_rails'
+
+#installing brakeman
+gem "brakeman"
