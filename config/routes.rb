@@ -34,5 +34,7 @@ Rails.application.routes.draw do
 
   resources :speeches
   post '/read_and_convert', to: 'speeches#read_and_convert' 
+
+  get '/check_member_attendance', to: 'members#check_member_attendance'
   
 end
