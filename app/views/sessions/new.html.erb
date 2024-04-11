@@ -182,8 +182,9 @@ table {
         <tbody>
           <% @events.each do |event| %>
             <tr>
-              <td><%= event.event_name %></td>
+              
               <td><%= event.event_link %></td>
+              <td><%= event.event_name %></td>
              <td><%= event.event_datetime.strftime("%Y-%m-%d %I:%M %p") %></td>
             </tr>
           <% end %>
