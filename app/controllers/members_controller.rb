@@ -6,11 +6,11 @@ class MembersController < ApplicationController
     def check_member_attendance
       if current_user.present?
         @member = Member.find_by(member_name: current_user.full_name)
-        if @member.present? && (@member.meetings.any? || @member.events.any?)
-          @attended = true
-        else
-          @attended = false
-        end
+        @attended = if @member.present? && (@member.meetings.any? || @member.events.any?)
+          true
+                    else
+          false
+                    end
       else
         @attended = false
       end
@@ -55,7 +55,7 @@ class MembersController < ApplicationController
         format.html do
           # Add the following line to see the validation errors in the browser console
           puts @member.errors.inspect
-          
+
           render :new, status: :unprocessable_entity
         end
         format.json { render json: @member.errors, status: :unprocessable_entity }

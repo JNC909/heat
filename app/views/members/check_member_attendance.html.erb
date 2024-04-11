@@ -26,6 +26,7 @@
     h3 {
       margin-top: 0;
     }
+    
   </style>
 </head>
 <body>
@@ -77,6 +78,12 @@
     <% else %>
       <p><%= @member ? "This member has not attended any events yet." : "Member is not in the system." %></p>
     <% end %>
+  </div>
+</div>
+
+  <div class="total-points">
+    <h3>Total Points:</h3>
+    <p><%= @member ? @member.member_points : "Member is not in the system." %></p>
   </div>
 </div>
 
