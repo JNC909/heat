@@ -1,6 +1,25 @@
 class MembersController < ApplicationController
   before_action :set_member, only: %i[ show edit update destroy ]
-  before_action :require_login
+  before_action :require_login, except: [:check_member_attendance]
+
+  def check_member_attendance
+    def check_member_attendance
+      if current_user.present?
+        @member = Member.find_by(member_name: current_user.full_name)
+        if @member.present? && (@member.meetings.any? || @member.events.any?)
+          @attended = true
+        else
+          @attended = false
+        end
+      else
+        @attended = false
+      end
+    end
+  end
+
+  def set_member
+    @member = current_user.member # Assuming you have a relationship between User and Member models
+  end
 
   # GET /members or /members.json
   def index

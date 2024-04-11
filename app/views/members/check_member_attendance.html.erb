@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h2>Meetings and Events attended for <%= current_user.full_name %></h2>
+  <title>Member Attendance</title>
+  <style>
+    /* Add CSS styles here */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="meetings-attended">
+    <h3>Meetings Attended</h3>
+    <% if @member.meetings.any? %>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @member.meetings.each do |meeting| %>
+            <tr>
+              <td><%= meeting.date.strftime("%b %d, %Y") %></td>
+              <td><%= meeting.name %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% else %>
+      <p>This member has not attended any meetings yet.</p>
+    <% end %>
+  </div>
+
+  <div class="events-attended">
+    <h3>Events Attended</h3>
+    <% if @member.events.any? %>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @member.events.each do |event| %>
+            <tr>
+              <td><%= event.event_datetime.strftime("%b %d, %Y %I:%M %p") %></td>
+              <td><%= event.event_name %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% else %>
+      <p>This member has not attended any events yet.</p>
+    <% end %>
+  </div>
+</div>
+
+</body>
+</html>
