@@ -4,5 +4,4 @@ class Member < ApplicationRecord
     # new code
     has_many :events_members
     has_many :events, through: :events_members
-    belongs_to :user
 end
