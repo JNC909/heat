@@ -2,6 +2,11 @@ require 'axlsx'
 
 class MeetingsMembersController < ApplicationController
   before_action :set_meeting_member, only: %i[show edit update destroy]
+  before_action :require_login
+
+  def require_login
+    redirect_to login_path unless session[:authenticated]
+  end
 
   # GET /meetings_members
   def index

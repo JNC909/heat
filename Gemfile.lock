@@ -68,6 +68,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    ast (2.4.2)
     axlsx_rails (0.6.1)
       actionpack (>= 3.1)
       caxlsx (>= 3.0)
@@ -76,6 +77,8 @@ GEM
     bindex (0.8.1)
     bootsnap (1.18.3)
       msgpack (~> 1.2)
+    brakeman (6.1.2)
+      racc
     builder (3.2.4)
     capybara (3.40.0)
       addressable
@@ -179,8 +182,10 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    json (2.7.2)
     jwt (2.8.1)
       base64
+    language_server-protocol (3.17.0.3)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -237,6 +242,10 @@ GEM
       omniauth (~> 2.0)
     orm_adapter (0.5.0)
     os (1.1.4)
+    parallel (1.24.0)
+    parser (3.3.0.5)
+      ast (~> 2.4.1)
+      racc
     pg (1.5.6)
     psych (5.1.2)
       stringio
@@ -282,6 +291,7 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0)
       zeitwerk (~> 2.5)
+    rainbow (3.1.1)
     rake (13.1.0)
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
@@ -310,6 +320,20 @@ GEM
       rspec-mocks (~> 3.13)
       rspec-support (~> 3.13)
     rspec-support (3.13.1)
+    rubocop (1.63.0)
+      json (~> 2.3)
+      language_server-protocol (>= 3.17.0)
+      parallel (~> 1.10)
+      parser (>= 3.3.0.2)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml (>= 3.2.5, < 4.0)
+      rubocop-ast (>= 1.31.1, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 2.4.0, < 3.0)
+    rubocop-ast (1.31.2)
+      parser (>= 3.3.0.4)
+    ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
     selenium-webdriver (4.19.0)
       base64 (~> 0.2)
@@ -352,6 +376,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    unicode-display_width (2.5.0)
     uri (0.13.0)
     version_gem (1.1.4)
     warden (1.2.9)
@@ -380,6 +405,7 @@ PLATFORMS
 DEPENDENCIES
   axlsx_rails
   bootsnap
+  brakeman
   capybara
   debug
   devise
@@ -397,6 +423,7 @@ DEPENDENCIES
   redis (~> 4.0)
   rexml
   rspec-rails
+  rubocop
   selenium-webdriver
   shoulda-matchers (~> 4.0)
   simplecov

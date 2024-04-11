@@ -94,8 +94,8 @@ gem 'google-cloud-text_to_speech'
 # Exporting table data
 gem 'axlsx_rails'
 
-#installing brakeman
+# installing brakeman
 gem "brakeman"
 
-#installing rubocop
+# installing rubocop
 gem "rubocop"
