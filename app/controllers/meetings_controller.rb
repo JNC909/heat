@@ -79,7 +79,7 @@ class MeetingsController < ApplicationController
     end
   
     # Only allow a list of trusted parameters through.
-    def meeting_params
-      params.require(:meeting).permit(:name, :date, :location)
-    end
+  def meeting_params
+    params.require(:meeting).permit(:name, :date, :time, :location, :description)
+  end
 end
