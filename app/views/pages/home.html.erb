@@ -60,13 +60,16 @@
     text-align: left;
   }
 
-    /* New styles for the text-to-speech section */
     #textToSpeechSection {
-      position: fixed;
-      top: 60px;
-      right: 20px;
-      text-align: right;
-    }
+  display: inline-block;
+  margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+#textToSpeechSection button {
+  display: inline-block;
+  margin-right: 20px; /* Add some spacing between buttons */
+  margin-top: -40px;
+}
 
   </style>
 </head>
@@ -111,20 +114,27 @@
         <%= link_to "Login", new_user_session_path, class: "btn btn-success" %>
         <% end %>
         <!-- Add the new button for reading the content -->
-        <div id="textToSpeechSection">
-          <button id="readContentButton" class="btn btn-primary">Read Content</button>
-        </div>
       </div>
     </div>
   </nav>
 
 
-  <audio id="audioPlayer" controls></audio>
+
+
 
    <!-- About Section-->
   <section id="about-organization" style="background-color: #f7f7f7; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); max-width: 800px; margin: 20px auto;">
-  <h2 style="text-align: center; color: #333;">About This Organization</h2>
+  <h2 style="text-align: center; color: #333;">Texas A&M HEAT</h2>
   <div style="background-color: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+  <%= image_tag("heat.png", alt: "", class: "heat-home-pic", height: "504px", width: "672px") %>
+  <br>
+  <div>
+  <audio id="audioPlayer" controls></audio>
+
+  <div id="textToSpeechSection" style="display: inline-block; margin-left: 10px;">
+    <button id="readContentButton" class="btn btn-primary">Read Content</button>
+  </div>
+</div>
     <p><strong>Abbreviation(s):</strong> H.E.A.T.</p>
     <p><strong>Purpose:</strong> H.E.A.T. is a student service organization dedicated to improving humanitarian, environmental, and animal welfare issues through positive activism. The Human Environmental Animal Team is committed to making a difference in all areas of service.</p>
     
