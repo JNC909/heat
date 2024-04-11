@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h2>Meetings and Events attended for <%= current_user.full_name %></h2>
+  <h2>Meetings and Events attended for <%= current_user.full_name %></h2>
   <title>Member Attendance</title>
   <style>
     /* Add CSS styles here */
@@ -33,7 +33,7 @@
 <div class="container">
   <div class="meetings-attended">
     <h3>Meetings Attended</h3>
-    <% if @member.meetings.any? %>
+    <% if @member && @member.meetings.any? %>
       <table>
         <thead>
           <tr>
@@ -51,13 +51,13 @@
         </tbody>
       </table>
     <% else %>
-      <p>This member has not attended any meetings yet.</p>
+      <p><%= @member ? "This member has not attended any meetings yet." : "Member is not in the system." %></p>
     <% end %>
   </div>
 
   <div class="events-attended">
     <h3>Events Attended</h3>
-    <% if @member.events.any? %>
+    <% if @member && @member.events.any? %>
       <table>
         <thead>
           <tr>
@@ -75,7 +75,7 @@
         </tbody>
       </table>
     <% else %>
-      <p>This member has not attended any events yet.</p>
+      <p><%= @member ? "This member has not attended any events yet." : "Member is not in the system." %></p>
     <% end %>
   </div>
 </div>
