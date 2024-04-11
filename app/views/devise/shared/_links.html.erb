@@ -10,7 +10,10 @@
       url: omniauth_authorize_path(resource_name, provider), 
       method: :post,
       data: {turbo: "false"} do |f| %>
-        <%= f.submit "", class: "google-sign-in", type: "image", src: "/assets/btn_google_signin_light_normal_web.png" %>
+        <%= button_tag(type: "submit", class: "google-sign-in") do %>
+  <%= image_tag("pic.png", alt: "", class: "google-sign-in-image") %>
+<% end %>
+
     <% end %>
   <% end %>
   <p style="margin-top: 20px;">Google login is required to access the site.</p>
