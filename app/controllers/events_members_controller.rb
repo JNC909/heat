@@ -2,6 +2,11 @@ require 'axlsx'
 
 class EventsMembersController < ApplicationController
   before_action :set_event_member, only: %i[show edit update destroy]
+  before_action :require_login
+
+  def require_login
+    redirect_to login_path unless session[:authenticated]
+  end
 
   # GET /events_members
   def index

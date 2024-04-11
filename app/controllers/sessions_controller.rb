@@ -1,7 +1,14 @@
 class SessionsController < ApplicationController
-  def new; end
+  def new
+    @meetings = Meeting.all
+    @events = Event.all
+    @links = Link.all
+  end
 
   def create
+    @meetings = Meeting.all
+    @events = Event.all
+    @links = Link.all
     if params[:password] == 'TxAMHeat#2k13'
       session[:authenticated] = true
       redirect_to meetings_path, notice: 'Successfully authenticated.'

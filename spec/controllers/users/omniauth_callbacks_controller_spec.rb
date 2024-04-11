@@ -7,14 +7,14 @@ RSpec.describe Users::OmniauthCallbacksController, type: :controller do
     let(:user) { create(:user) }
     let(:auth) do
       OmniAuth::AuthHash.new({
-        provider: 'google_oauth2',
-        uid: '123456',
-        info: {
-          email: user.email,
-          name: 'Test User', # Set a name for testing purposes
-          image: 'http://example.com/avatar.jpg'
-        }
-      })
+                               provider: 'google_oauth2',
+                               uid: '123456',
+                               info: {
+                                 email: user.email,
+                                 name: 'Test User', # Set a name for testing purposes
+                                 image: 'http://example.com/avatar.jpg'
+                               }
+                             })
     end
 
     before do

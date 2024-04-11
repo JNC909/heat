@@ -1,5 +1,10 @@
 class LinksController < ApplicationController
   before_action :set_link, only: %i[show edit update destroy]
+  before_action :require_login
+
+  def require_login
+    redirect_to login_path unless session[:authenticated]
+  end
 
   # GET /links
   def index

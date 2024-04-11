@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe EventsController, type: :controller do
-  let(:valid_attributes) {
+  let(:valid_attributes) do
     { event_name: 'Test Event', event_datetime: DateTime.now }
-  }
+  end
 
   before(:each) do
     @event = Event.create(valid_attributes)
@@ -41,9 +41,9 @@ RSpec.describe EventsController, type: :controller do
   describe "POST #create" do
     context "with valid params" do
       it "creates a new Event" do
-        expect {
+        expect do
           post :create, params: { event: valid_attributes }
-        }.to change(Event, :count).by(1)
+        end.to change(Event, :count).by(1)
       end
 
       it "redirects to the created event" do
@@ -55,9 +55,9 @@ RSpec.describe EventsController, type: :controller do
 
   describe "PATCH #update" do
     context "with valid params" do
-      let(:new_attributes) {
+      let(:new_attributes) do
         { event_name: 'Updated Event' }
-      }
+      end
 
       it "updates the requested event" do
         patch :update, params: { id: @event.id, event: new_attributes }
@@ -74,9 +74,9 @@ RSpec.describe EventsController, type: :controller do
 
   describe "DELETE #destroy" do
     it "destroys the requested event" do
-      expect {
+      expect do
         delete :destroy, params: { id: @event.id }
-      }.to change(Event, :count).by(-1)
+      end.to change(Event, :count).by(-1)
     end
 
     it "redirects to the events list" do

@@ -3,13 +3,13 @@
 require 'rails_helper'
 
 RSpec.describe LinksController, type: :controller do
-  let(:valid_attributes) {
+  let(:valid_attributes) do
     { title: 'Test Link', url: 'http://example.com' }
-  }
+  end
 
-  let(:invalid_attributes) {
+  let(:invalid_attributes) do
     { title: '', url: '' }
-  }
+  end
 
   describe "GET #index" do
     it "returns a success response" do
@@ -44,9 +44,9 @@ RSpec.describe LinksController, type: :controller do
   describe "DELETE #destroy" do
     it "destroys the requested link" do
       link = Link.create! valid_attributes
-      expect {
+      expect do
         delete :destroy, params: { id: link.to_param }
-      }.to change(Link, :count).by(-1)
+      end.to change(Link, :count).by(-1)
     end
 
     it "redirects to the links list" do

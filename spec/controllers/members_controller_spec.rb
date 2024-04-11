@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe MembersController, type: :controller do
-  let(:valid_attributes) {
+  let(:valid_attributes) do
     { member_name: 'Test Member', member_points: 100, executive_status: true }
-  }
+  end
 
   before(:each) do
     @member = Member.create(valid_attributes)
@@ -41,9 +41,9 @@ RSpec.describe MembersController, type: :controller do
   describe "POST #create" do
     context "with valid params" do
       it "creates a new Member" do
-        expect {
+        expect do
           post :create, params: { member: valid_attributes }
-        }.to change(Member, :count).by(1)
+        end.to change(Member, :count).by(1)
       end
 
       it "redirects to the created member" do
@@ -55,9 +55,9 @@ RSpec.describe MembersController, type: :controller do
 
   describe "PATCH #update" do
     context "with valid params" do
-      let(:new_attributes) {
+      let(:new_attributes) do
         { member_name: 'Updated Name' }
-      }
+      end
 
       it "updates the requested member" do
         patch :update, params: { id: @member.id, member: new_attributes }
@@ -74,9 +74,9 @@ RSpec.describe MembersController, type: :controller do
 
   describe "DELETE #destroy" do
     it "destroys the requested member" do
-      expect {
+      expect do
         delete :destroy, params: { id: @member.id }
-      }.to change(Member, :count).by(-1)
+      end.to change(Member, :count).by(-1)
     end
 
     it "redirects to the members list" do
