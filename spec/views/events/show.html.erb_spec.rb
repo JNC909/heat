@@ -10,7 +10,7 @@ RSpec.describe "events/index", type: :view do
 
   it "renders a list of events" do
     render
-    expect(rendered).to match(/Event 1/)
+    expect(rendered).to match(/Event 1/) #deleting tmp
     expect(rendered).to match(/Event 2/)
     expect(rendered).to have_selector("div.event", count: 2)
 
