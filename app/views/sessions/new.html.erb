@@ -201,6 +201,7 @@ table {
           <tr>
             <th>Name</th>
             <th>Link</th>
+            <th>Description</th>
             <th>Start Date & Time</th>
             <th>End Date & Time</th>
             <th>Points</th>
@@ -211,6 +212,7 @@ table {
             <tr>
               <td><%= event.event_name %></td>
               <td><%= event.event_link %></td>
+              <td><%= event.event_description %></td>
              <td><%= event.event_datetime.strftime("%Y-%m-%d %I:%M %p") %></td>
              <td><%= event.event_end.strftime("%Y-%m-%d %I:%M %p") %></td>
              <td><%= event.event_points %></td>
