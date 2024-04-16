@@ -55,7 +55,8 @@ class EventsMembersController < ApplicationController
     respond_to do |format|
       if @event_member.save
         @member = Member.find(@event_member.member_id)
-        @member.increment!(:member_points)
+        @event = Event.find(@event_member.event_id)
+        @member.increment!(:member_points, @event.event_points)
 
         format.html { redirect_to events_members_path, notice: 'Member added to event successfully!' }
         format.json { render :show, status: :created, location: @event_member }
