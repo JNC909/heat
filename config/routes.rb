@@ -18,11 +18,19 @@ Rails.application.routes.draw do
   # end
   resources :meetings do
     get 'member_view', on: :collection
+    #delete 'remove_member', to: 'meetings#remove_member_from_meeting', as: 'remove_member_from_meeting'
   end
-  resources :meetings_members
+  resources :meetings_members do
+    delete 'remove_member_from_meeting', on: :collection, as: 'remove_member_from_meeting_meetings_member'
+  end
+    
   resources :links
   # resources :events_members
   resources :events_members, only: [:index, :create]
+
+  resources :events_members do
+    delete 'remove_member_from_event', on: :collection
+  end
 
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'

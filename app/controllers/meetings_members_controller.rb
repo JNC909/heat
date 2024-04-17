@@ -13,6 +13,7 @@ class MeetingsMembersController < ApplicationController
     # @meetings_members = MeetingsMember.includes(:meeting, :member).all
     @meetings_members = MeetingsMember.includes(:meeting, :member).order('meetings.date DESC')
     @meetings = Meeting.all
+    @members = Member.all  # Add this line to set @members
   end
 
   # for exporting table data
@@ -43,6 +44,22 @@ class MeetingsMembersController < ApplicationController
 
   # GET /meetings_members/1/edit
   def edit; end
+
+  #new code
+  def remove_member_from_meeting
+    @meeting = Meeting.find(params[:meeting_id])
+    @member = Member.find(params[:member_id])
+
+    if @meeting && @member && @meeting.members.include?(@member)
+      @meeting.members.delete(@member)
+      @member.decrement!(:member_points)
+      flash[:notice] = "Member removed from meeting successfully!"
+    else
+      flash[:alert] = "Failed to remove member from meeting!"
+    end
+
+    redirect_to meetings_members_path
+  end
 
   # POST /meetings_members
   def create

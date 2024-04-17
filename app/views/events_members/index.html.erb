@@ -82,8 +82,19 @@
   </tbody>
 </table>
 
-<%= link_to "Back to Members", members_path %>
-<%= link_to "Back to Events", events_path %>
+<div>
+  <%= link_to "Back to Members", members_path %><br><br>
+  <%= link_to "Back to Events", events_path %>
+</div>
+
+<div><br><br>
+  <%= link_to 'Export to Excel', events_export_path, class: 'btn btn-primary' %>
+</div>
 
 
-<%= link_to 'Export to Excel', events_export_path, class: 'btn btn-primary' %>
+<h2>Remove Member from Event</h2>
+<%= form_with(url: remove_member_from_event_events_members_path, method: :delete) do |form| %>
+  <%= form.collection_select :event_id, @events, :id, :event_name, prompt: "Select Event" %>
+  <%= form.collection_select :member_id, @members, :id, :member_name, prompt: "Select Member" %>
+  <%= form.submit "Remove Member", class: "btn btn-danger" %>
+<% end %>
