@@ -5,7 +5,7 @@ class MeetingsMembersController < ApplicationController
   before_action :require_login
 
   def require_login
-    redirect_to login_path unless session[:authenticated]
+    redirect_to login2_path unless session[:authenticated]
   end
 
   # GET /meetings_members
