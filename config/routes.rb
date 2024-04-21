@@ -45,5 +45,8 @@ Rails.application.routes.draw do
 
   get '/check_member_attendance', to: 'members#check_member_attendance'
 
+  post '/update_password', to: 'sessions#update_password'
+  get 'change_password', to: 'sessions#change_password', as: 'change_password'
+
   
 end

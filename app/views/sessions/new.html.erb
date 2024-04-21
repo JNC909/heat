@@ -254,11 +254,47 @@ table {
         </div>
         <div>
           <%= form.submit "Submit", class: "btn btn-primary" %>
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#changePasswordModal">
+            Change Password
+          </button>
         </div>
       <% end %>
       <% if flash[:alert] %>
         <p class="text-danger"><%= flash[:alert] %></p>
       <% end %>
+    </div>
+  </div>
+ 
+  <!-- The Modal -->
+  <div class="modal" id="changePasswordModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Change Password</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form id="changePasswordForm" action="<%= update_password_path %>" method="post">
+            <div class="form-group">
+              <label for="oldPassword">Previous Password:</label>
+              <input type="password" class="form-control" id="oldPassword" required>
+            </div>
+            <div class="form-group">
+              <label for="newPassword">New Password:</label>
+              <input type="password" class="form-control" id="newPassword" required>
+            </div>
+            <div class="form-group">
+              <label for="confirmNewPassword">Confirm New Password:</label>
+              <input type="password" class="form-control" id="confirmNewPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Password</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 
