@@ -1,17 +1,32 @@
 <div id="<%= dom_id event %>">
   <p>
-    <strong>Event link:</strong>
+    <strong>Event Link:</strong>
     <%= link_to event.event_link, event.event_link %>
   </p>
 
   <p>
-    <strong>Event name:</strong>
+    <strong>Event Name:</strong>
     <%= event.event_name %>
   </p>
 
   <p>
-    <strong>Event datetime:</strong>
+    <strong>Event Description:</strong>
+    <%= event.event_description %>
+  </p>
+
+  <p>
+    <strong>Event Deadline:</strong>
+    <%= event.event_end.strftime("%A, %d %B %Y at %I:%M %p") %>
+  </p>
+
+  <p>
+    <strong>Event Start:</strong>
     <%= event.event_datetime.strftime("%A, %d %B %Y at %I:%M %p") %>
+  </p>
+
+  <p>
+    <strong>Event Points:</strong>
+    <%= event.event_points %>
   </p>
 </div>
 

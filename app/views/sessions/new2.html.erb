@@ -166,83 +166,10 @@ table {
 </script>
 
   <div class="container mt-4">
-    <!-- Member View Table -->
-    <div class="mb-4">
-      <h2 class="mb-3">Meetings</h2>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Location</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @meetings.each do |meeting| %>
-            <tr>
-              <td><%= meeting.name %></td>
-              <td><%= meeting.date %></td>
-              <td><%= meeting.time.strftime("%I:%M %p") if meeting.time.present? %></td>
-              <td><%= meeting.location %></td>
-              <td><%= meeting.description %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- Member View Events Table -->
-    <div class="mb-4">
-      <h2 class="mb-3">Events</h2>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Link</th>
-            <th>Description</th>
-            <th>Deadline</th>
-            <th>Start</th>
-            <th>Points</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @events.each do |event| %>
-            <tr>
-              <td><%= event.event_name %></td>
-              <td><%= link_to h(event.event_link), h(event.event_link) %></td>
-              <td><%= event.event_description %></td>
-             <td><%= event.event_end.strftime("%Y-%m-%d %I:%M %p") %></td>
-             <td><%= event.event_datetime.strftime("%Y-%m-%d %I:%M %p") %></td>
-             <td><%= event.event_points %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- Member View Links Table -->
-<div class="mb-4">
-  <h2 class="mb-3">Links</h2>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Link</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @links.each do |link| %>
-        <tr>
-          <td><%= link.title %></td>
-          <td><%= link_to h(link.url), h(link.url) %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
-
+    <!-- Authotization message -->
+    <div>
+      <h5>Must enter password to gain access</h2>
+    </div></br></br>
 
     <!-- Admin Login button -->
     <div>

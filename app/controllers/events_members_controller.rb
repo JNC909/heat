@@ -5,13 +5,14 @@ class EventsMembersController < ApplicationController
   before_action :require_login
 
   def require_login
-    redirect_to login_path unless session[:authenticated]
+    redirect_to login2_path unless session[:authenticated]
   end
 
   # GET /events_members
   def index
     @events = Event.all
     @events_members = EventsMember.includes(:event, :member).all
+    @members = Member.all  # Add this line to set @members
   end
 
   # for exporting table data
@@ -42,6 +43,26 @@ class EventsMembersController < ApplicationController
   # GET /events_members/1/edit
   def edit; end
 
+  #new code
+  def remove_member_from_event
+    @event = Event.find(params[:event_id])
+    @member = Member.find(params[:member_id])
+
+    if @event && @member && @event.members.include?(@member)
+      # Remove the member from the event
+      @event.members.delete(@member)
+
+      # Deduct one point from the member's member_points value
+      @member.decrement!(:member_points, @event.event_points) #change this to a variable number.
+
+      flash[:notice] = "Member removed from event successfully and one point deducted!"
+    else
+      flash[:alert] = "Failed to remove member from event!"
+    end
+
+    redirect_to events_members_path
+  end
+
   # POST /events_members
   def create
     @event_member = EventsMember.new(event_member_params)
@@ -55,7 +76,8 @@ class EventsMembersController < ApplicationController
     respond_to do |format|
       if @event_member.save
         @member = Member.find(@event_member.member_id)
-        @member.increment!(:member_points)
+        @event = Event.find(@event_member.event_id)
+        @member.increment!(:member_points, @event.event_points)
 
         format.html { redirect_to events_members_path, notice: 'Member added to event successfully!' }
         format.json { render :show, status: :created, location: @event_member }
