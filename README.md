@@ -7,19 +7,15 @@ It also keeps track of organization members and their attendance which awards th
 # Requirements
 Environment
   - Docker Engine v24.0.7
-  - 
-  -
 
 Program
   - Ruby V3.1.2
   - Rails V7.0.2
-  - 
 
 Tools
   - GitHub Main Branch: https://github.com/JNC909/heat
   - Jira
   - Heroku
-  - 
 
 # External Deps
 - Docker - Download latest version at https://www.docker.com/products/docker-desktop
@@ -30,10 +26,7 @@ Tools
 Our product and sprint backlog can be found in Jira, with organization name [heatcsce431] and project name [heatproject]
 
 Document
-•	Data Design v?
-•	UX Design v?
-•	User’s Manual v?
-•	Others
+•	Data Design Sprint 3 v2
 
 # Downloading code
 In a terminal of your choice (PowerShell, for example), type "git clone https://github.com/JNC909/heat.git"
