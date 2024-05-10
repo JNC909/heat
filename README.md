@@ -1,5 +1,5 @@
 # README
-
+#change
 # WHAT IS THE APPLICATION?
 This application is meant to service the Human Environment and Animal Team. This keeps track of all their events and meetings, allowing them to create, modify, and delete them as they please.
 It also keeps track of organization members and their attendance which awards them points. Additionally, there are available links to relevent sites such as social media.
